@@ -24,3 +24,6 @@
 #DEFAULT (echo ""; id; echo %s; date; cat) >> $CVSROOT/CVSROOT/commitlog
 # or
 #DEFAULT (echo ""; id; echo %{sVv}; date; cat) >> $CVSROOT/CVSROOT/commitlog
+
+DEFAULT (echo ""; echo $USER; date; echo ""; cat) | mail -s "[CVS] commit: `echo %s | head -n 1`" contact-manager-devel@lists.sourceforge.net
+
