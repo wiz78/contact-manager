@@ -1,0 +1,116 @@
+                             CManager History
+                             ----------------
+
+    1.9     09/04/00    - Fixed possible Enforcer hit when searching.
+
+    1.8     18/02/00    - Fixed Thor import, screwed in the previous
+                          version. Whoops.
+                        - Thor importer splits name/last name parts.
+                        - Fixed CM crash when quitting it while an edit
+                          window is open.
+                        - Added MUIM_CManager_Cleanup: application
+                          *MUST* call this method before disposing the
+                          application object.
+                        - MCC: now correctly checks for a newer database
+                          to load during MUIM_Setup. This has been broken
+                          in one of the previous releases, causing some
+                          out-of-synch troubles.
+
+    1.7     18/10/99    - Fixed second argument of the hook
+                          MUIA_CManager_AppDoubleClick: A2 will point
+                          to the calling CM.mcc object.
+                        - The .mcc didn't reload the prefs when clicking
+                          on "Save".
+                        - Now it uses SpeedBar.mcc.
+                        - Fixed a ~16Kb memory leak in the MCC.
+                        - Fixed "Project->Open..." which failed under
+                          some circumstances.
+                        - Fixed ADT setting not being restored properly
+                          in the FTP edit window.
+                        - Fixed Search.
+                        - Fixed some Enforcer hits due to malloc() not
+                          being initialisated properly.
+
+    1.6     26/08/99    - Fixed CM<->MD2 problem.
+                        - The .mcc will show a warning requester if it
+                          cannot open the required CManager.library.
+                        - When importing users from addressbooks which
+                          don't have separate first/last name fields
+                          (like YAM) CM will split the name at the
+                          last blank.
+                        - Added support for STFax 4 phonebooks.
+                        - MCC: fixed crash when removing items from V's
+                          bookmarks.
+                        - Added "Save on changes" option.
+                        - Added some extra FTP options (for mFTP).
+                        - Changed key file system.
+
+    1.5     19/08/99    - Fixed bug: CManager would crash/eat all your
+                          CPU time when adding an entry while it was
+                          iconified.
+                        - CManager.mcc won't prompt for user/password
+                          when there is no logged in user, but will use
+                          the first one in Genesis' database.
+                        - Moved the user list into the .mcc.
+                        - Fixed 2 Enforcer hits which occurred when
+                          you dismissed the login requester.
+                        - Fixed some nasty bugs in the .mcc.
+                        - Included the updated .ct file.
+                        - Added HTML export routines for WWW/FTP records.
+                        - Removed some dead code.
+                        - Added CSV export for user records.
+                        - Corrupt databases have less chances to get CM
+                          to trash memory.
+                        - Added warning requester to the .mcc in the case
+                          that ENV:Vapor/CManager_path doesn't exist.
+                        - Moved the Search requester into the .mcc.
+                        - Added CSV import for user records.
+
+    1.4     18/07/99    - Option to log calls with Genesis' logger.
+                        - If EMail is empty, business EMail will be
+                          showed in the list.
+                        - Added Mobile field to the business section.
+                        - Added Telnet group.
+                        - CManager.mcc
+                        - CManager now uses the .mcc
+
+    1.3     10/12/98    - Only one edit window per entry is allowed.
+                        - Fixed problem in the AWeb hotlist importer
+                          when the site name was too long.
+                        - Added PGP UserID field.
+                        - Fixed dialler.
+                        - Splitted the "Name" column for users into
+                          "Name" and "Last name".
+                        - Clicking on "Name" or "Last name" change
+                          the sort criteria.
+                        - Added "Don't move columns" option.
+
+    1.2     05/11/98    - Added "Save on exit" option.
+                        - Added DFA Addresses importer.
+                        - Added UMS (PINT/GoodNews) importer.
+                        - Added STRICQ profiles importer.
+                        - Added USER and PASSWORD tooltypes/args.
+                        - Added option to start an arexx script and iconify.
+                        - If no user is logged into the system, it will try to
+                          login the first user in the database.
+                        - Fixed ASL requesters not opening on the right screen.
+                        - Fixed bug: dragging an item from group A into group A
+                          caused the item to disappear.
+                        - Fixed bug: the Sort button didn't set the "changed"
+                          status flag.
+
+    1.1     24/09/98    - Added support for OpenURL library.
+                        - Password gadgets now don't show the
+                          contents.
+                        - Added the internal dialler.
+                        - Reworked the prefs panel.
+                        - New scripts system.
+                        - The "Edit user" window now uses a virtual group so
+                          that it can be opened even on 640x256 (gah!) screens.
+                        - Fixed some bugs.
+                        - Added some fields to the User section.
+                        - Added AmIRC plugin.
+                        - Added vapor_update.library support.
+                        - Added NOLOGIN ToolType/argument.
+
+    1.0                 - Initial release.
