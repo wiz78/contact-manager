@@ -1,0 +1,5 @@
+smake
+rev libid CManager
+slink to CManager.library from lib:libent.o,lib:libinit.o,CManager.o ND NOICONS SC SD LIB lib:sc.lib,lib:small.lib libversion $libver librevision $librev libid "$libid" libfd cmanager_lib.fd map cmanager.map hxfslo with lib:utillib.with
+copy CManager.library LIBS:
+flushlib CManager.library

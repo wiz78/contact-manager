@@ -1,0 +1,33 @@
+                        Contact Manager Suggestions
+                        ---------------------------
+
+                                   USERS
+
+A way to store a small image would be cool. This would mean we can store
+pictures of people in the Contact Manager. Borrow V's image decoding
+routines, and scale all images down to a certain size that we all like (any
+ideas? I'd say about 75x75) for display.
+
+
+   Communications Tracker
+   ----------------------
+   Every time something is added to the Comments field, it should put
+   something like this: [ADDED <date> <time> by <user>]. Eventually,
+   the Comms Tracker ends up with something like this:
+
+       [ADDED 21-Jan-1998, 3:05pm by JASON]
+       Called at 4pm
+       [ADDED 6-Feb-1998, 2:18pm by JASON]
+       Arranged to meet at 5pm on Tuesday.
+
+   This is of course, much more effective if TextInput would allow
+   inverse text and different colours, which is something TI really
+   does need (IMHO).
+
+   This idea stems from using Tracker Contact Manager at work. It's
+   *incredibly* useful. People can use their Amigsa to keep track of
+   time spent on the phone to clients, etc. This would be a big
+   advantage of using Contact Manager, and shouldn't be THAT hard to
+   implement (surely, as its just a big text area, though the TI
+   modificaitons would be needed for it to be properly realised).
+

@@ -1,0 +1,5 @@
+# CManager.debug: CManager.o
+#   sc link to CManager.debug from CManager.o
+
+CManager.o: CManager.c /mymacros.h /CManager.h CManagerMsg.h
+  sc CManager.c
