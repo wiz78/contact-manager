@@ -1,0 +1,49 @@
+# Make file for CManager
+
+TARGET = CManager
+
+# Compiler
+C_COMPILER = sc
+
+C_OPTIMIZE = OPTIMIZE OPTSCHEDULE NOOPTSIZE OPTTIME\
+OPTINLINE OPTINLOCAL OPTLOOP NOOPTALIAS OPTPEEP\
+OPTRDEPTH=5 OPTDEPTH=5 OPTCOMPLEXITY=8
+
+C_COMPILER_OPTS = PARAMS=r NOCHECKABORT NOSTACKCHECK NOSTACKEXTEND STRINGMERGE\
+COMMENTNEST IDLEN=128 IGNORE=315 IGNORE=317 INCLUDEDIR=/include\
+$(C_OPTIMIZE)
+
+# Assembler
+ASSEMBLER = a68k
+ASSEMBLER_OPTS = -iainc:
+
+# Linker
+LINKER = slink
+LINKER_OPTS = NOICONS SC SD ND
+
+# Objects
+OBJECTS = cm.o app.o win.o about.o parseArgs.o utils.o
+
+# Libs
+LIBS = LIB:sc.lib LIB:amiga.lib LIB:debug.lib
+
+# Built module
+$(TARGET): $(OBJECTS) $(LIBS)
+         $(LINKER) <with <
+FROM LIB:c.o $(OBJECTS) TO $(TARGET) LIB $(LIBS) $(LINKER_OPTS)
+<
+
+# Rules
+.c.o:
+        $(C_COMPILER) $*.c $(C_COMPILER_OPTS)
+
+.asm.o:
+        $(ASSEMBLER) $(ASSEMBLER_OPTS) $*.asm
+
+# Dependences
+cm.o:        cm.c cm.h CManager_rev.h cm_protos.h
+app.o:       app.c cm.h cm_protos.h
+win.o:       win.c cm.h cm_protos.h
+about.o:     about.c cm.h CManager_rev.h cm_protos.h
+parseArgs.o: parseArgs.c cm.h CManager_rev.h cm_protos.h
+utils.o:     utils.c cm.h cm_protos.h

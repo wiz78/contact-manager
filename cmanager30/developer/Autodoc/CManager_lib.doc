@@ -1,0 +1,516 @@
+TABLE OF CONTENTS
+
+CManager.library/CManager.library
+CManager.library/CM_AddEntry
+CManager.library/CM_AllocCMData
+CManager.library/CM_AllocEntry
+CManager.library/CM_AllocObject
+CManager.library/CM_FreeData
+CManager.library/CM_FreeEntry
+CManager.library/CM_FreeHandle
+CManager.library/CM_FreeObject
+CManager.library/CM_GetEntry
+CManager.library/CM_GetOption
+CManager.library/CM_GetString
+CManager.library/CM_LoadDataA
+CManager.library/CM_SaveDataA
+CManager.library/CM_StartCManager
+CManager.library/CManager.library
+
+---
+ Contact Manager - An Amiga Centralized Bookmarks System
+
+ Copyright 1999-2006 by Simone [wiz] Tellini https://tellini.info/
+ Copyright 2003-2006 by Alfonso [alfie] Ranieri <alforan@tin.it>
+ All Rights Are Reserved.
+
+ Destributed Under The Terms Of The LGPL II
+---
+
+CManager.library offers an easy way to create a global bookmarks
+system.
+
+It handles all the low level stuff to load and save a complete
+database of bookmarks.
+
+If you are not developing a CManager application, you will need
+just a couple of functions such as CM_AddEntry(), to add an entry
+in a database and CM_StartManager() to start a CManager instance.
+
+IMPORTANT NOTES:
+
+Since version 30.0, the functions
+
+    - CM_LoadData
+    - CM_LoadDataOld
+    - CM_SaveData
+    - CM_SaveDataOld
+    - CM_FreeDataOld
+    - CM_LoadCurrentUserData
+    - CM_DeleteBitMap
+    - CM_CreateBitMap
+
+    Are not supported anymore and they will always fail.
+
+    CM_DeleteBitMap and CM_CreateBitMap was a nop since version 21.
+    
+    To load/save data use CM_LoadDataA and CM_SaveData().
+    
+CManager.library/CM_AddEntry
+
+   NAME
+    CM_AddEntry - adds an entry
+
+   SYNOPSIS
+    result = CM_AddEntry(entry);
+    D0                   A0
+
+    BOOL CM_AddEntry( APTR );
+
+   FUNCTION
+    Add an entry to the current database.
+
+    The entry is added at the head of its root group.
+
+    Note that entry is copied.
+
+   INPUTS
+    entry - the entry to add
+
+   RESULT
+    result - a boolean
+
+CManager.library/CM_AllocCMData
+
+   NAME
+    CM_AllocCMData - allocates and initializes a CMData
+                     structure
+
+   SYNOPSIS
+    data = CM_AllocCMData();
+    D0
+
+    struct CMData *CM_AllocCMData( void );
+
+   FUNCTION
+    Allocate a CMData structure and initialize it. The result
+    returned must be freed with CM_FreeData() .
+
+   INPUT
+    none
+
+   RESULT
+    data - CMData structure ptr or NULL.
+
+   SEE
+    CM_AllocObject
+    CM_FreeData()
+
+CManager.library/CM_AllocEntry
+
+   NAME
+    CM_AllocEntry - allocates a CM entry
+
+   SYNOPSIS
+    entry = CM_AllocEntry(type);
+    D0                    D0
+
+    APTR CM_AllocEntry( ULONG );
+
+   FUNCTION
+    Allocates a CM entry of Type type. The result returned must
+    be freed with CM_FreeEntry() .
+      
+
+   INPUT
+    type - the Type of the entry, one of:
+           o CMEntry_Group 
+           o CMEntry_User  
+           o CMEntry_WWW   
+           o CMEntry_FTP   
+           o CMEntry_Chat  
+           o CMEntry_Telnet
+    
+
+   RESULT
+    entry - the entry or NULL
+
+   SEE
+    CM_FreeEntry()
+
+CManager.library/CM_AllocObject
+
+   NAME
+    CM_AllocObject - allocates and initializes CM data
+
+   SYNOPSIS
+    o = CM_AllocObject(Type);
+    D0
+
+    APTR CM_AllocCMData( ULONG );
+
+   FUNCTION
+    Allocates a CM data structure of Type type. The result
+    returned must be freed with CM_FreeObject() .
+
+   INPUT
+    type - the Type of the entry, one of:
+           o CMALLOCOBJECT_EMail
+
+   RESULT
+    o - the data or NULL
+
+   SEE
+    CM_AllocEntry()
+    CM_FreeObject()
+
+CManager.library/CM_FreeData
+
+   NAME
+    CM_FreeData - frees CMData
+
+   SYNOPSIS
+    CM_FreeData(data);
+                A0
+
+    void CM_FreeData(APTR);
+
+   FUNCTION
+    Frees data allocated with CM_AllocData() .
+
+   INPUT
+    data - data to free
+
+   RESULT
+    none
+
+   SEE
+    CM_AllocData()
+
+CManager.library/CM_FreeEntry
+
+   NAME
+    CM_FreeEntry - frees a CM entry
+
+   SYNOPSIS
+    CM_FreeEntry(entry);
+                 A0
+
+    void CM_FreeEntry(APTR);
+
+   FUNCTION
+    Frees an entry allocated with CM_AllocEntry() .
+
+   INPUT
+    entry - the entry to free
+
+   RESULT
+    none
+
+   SEE
+    CM_AllocEntry()
+
+CManager.library/CM_FreeHandle
+
+   NAME
+    CM_FreeHandle - frees a CMHandle
+
+   SYNOPSIS
+    CM_FreeHandle(handle);
+                  A0
+
+    void CM_FreeHandle(APTR);
+
+   FUNCTION
+    Frees a CMHandle, result of CM_StartManager() .
+
+   INPUT
+    handle - the handle to free
+
+   RESULT
+    none
+
+   SEE
+    CM_StartManager()
+
+CManager.library/CM_FreeObject
+
+   NAME
+    CM_FreeObject - frees CM data
+
+   SYNOPSIS
+    CM_FreeObject(data);
+                  A0
+
+    void CM_FreeObject(APTR);
+
+   FUNCTION
+    Frees data allocated with CM_AllocObject() .
+
+   INPUT
+    data - the data to free
+
+   RESULT
+    none
+
+   SEE
+    CM_AllocObject()
+
+CManager.library/CM_GetEntry
+
+   NAME
+    CM_GetEntry - get an entry
+
+    entry = CM_GetEntry(handle,flags);
+    D0                  A1     D0
+
+    APTR CM_GetEntry(APTR,ULONG);
+
+   FUNCTION
+    Get one entry from a CManager instance.
+
+    handle is the result from a CM_StartManager() call.
+
+    flags is a inclusive or of:
+
+    o CMGETENTRY_User  
+      Include Users 
+      
+    o CMGETENTRY_WWW   
+      Include WWW sites 
+
+    o CMGETENTRY_FTP   
+      Include FTP sites 
+    
+    o CMGETENTRY_Chat  
+      Include Chat entries 
+
+    o CMGETENTRY_Telnet
+      Include Telnet hosts
+
+    o CMGETENTRY_Multi 
+      The result is a struct MinList * , the nodes of which are
+      the selected entries; otherwise the result is an APTR to
+      the selected entry.
+      
+
+   INPUT
+    handle - a CMHandle
+    flags - see above
+
+   RESULT
+    result - see above and be prepared to get NULL
+
+CManager.library/CM_GetOption
+
+   NAME
+    CM_GetOption - reads a single CManager.library option
+
+    value = CM_GetOption(option);
+    D0                   D0
+
+    ULONG CM_GetOption(ULONG);
+
+   FUNCTION
+    Reads one CManager.library option.
+
+    options is one of:
+
+    - CMGETOPTION_AvoidGenesis (BOOL)
+      Indicates if the env var CManager_AvoidGenesis is set to 1
+
+   INPUT
+    option - the option to read
+
+   RESULT
+    value - the value of option
+
+CManager.library/CM_GetString
+
+   NAME
+    CM_GetString - gets a localized CM string
+
+   SYNOPSIS
+    str = CM_GetString(id);
+    D0                 D0
+
+    STRPTR CM_GetString(ULONG);
+
+   FUNCTION
+    Returns a localized CManager string.
+
+   INPUT
+    id - the id of the string to get
+
+   RESULT
+    str - the localized string, or ""
+
+CManager.library/CM_LoadDataA
+
+   NAME
+    CM_LoadDataA - loads CM data
+
+   SYNOPSIS
+    result = CM_LoadDataA(attrs)
+    D0                    A0   
+
+    ULONG CM_LoadDataA( struct TagItem *);
+
+    result = CM_LoadData(Tag1,...)
+    D0                    A0   
+
+    ULONG CM_LoadData(Tag, ...);
+
+   FUNCTION
+    Loads CM data. 
+    
+    The defined attibutes are:
+
+    - CMA_LoadData_CMData  
+      struct CMData *
+      Default: NULL
+
+      Data to filled. It must be supplied, but if 
+      CMA_LoadData_Current is TRUE
+      
+    - CMA_LoadData_File. 
+      STRPTR
+      Default: NULL
+      
+      It must be supplied, but if CMA_LoadData_Current
+      is TRUE
+      
+    - CMA_LoadData_User    
+      STRPTR
+      Default: NULL
+      
+      if it is not NULL and not "", it must be the user that
+      saved the data.
+  
+    - CMA_LoadData_Current 
+      BOOL
+      Default: FALSE
+    
+      Load current genesis.library user. If and only if
+      it is supplied, you may not supply       
+      CMA_LoadData_CMData and CMA_LoadData_File.
+      result is a brand new struct CMData *
+    
+    - CMA_LoadData_Ask     
+      BOOL
+      Default: FALSE
+      
+      If CMA_LoadData_Current, ask the user.
+    
+   INPUT
+    attrs - attribute
+
+   RESULT
+    result - a boolean or a struct CMData * if 
+             CMA_LoadData_Current is TRUE
+             
+   SEE
+    CM_SaveDataA()
+
+CManager.library/CM_SaveDataA
+
+   NAME
+    CM_SaveDataA - saves CM data
+
+   SYNOPSIS
+     ULONG CM_SaveDataA(attrs)
+     D0                A0
+     
+     res = CM_SaveDataA( struct TagItem *);
+
+     ULONG CM_SaveData(Tag1,...)
+     D0                A0
+     
+     res = CM_SaveData( Tag,... )
+
+   FUNCTION
+    Saves CMData.
+
+    The defined attibutes are:
+
+    - CMA_SaveData_CMData      
+      struct CMData *
+      Default: NULL
+        
+      The data to save. Must be supplied          
+
+    - CMA_SaveData_File        
+      STRPTR
+      Default: NULL
+      
+      Where to save data. Must be supplied
+      
+    - CMA_SaveData_User        
+      STRPTR
+      Default: NULL
+     
+      if is not NULL, it is saved in the data; see
+      CM_LoadDataA()/CMA_LoadData_User    
+
+   INPUT
+    attrs - attributes
+
+   RESULT
+    result - a boolean
+
+   SEE
+    CM_LoadDataA()
+
+CManager.library/CM_StartCManagerA
+
+   NAME
+    CM_StartCManagerA - starts a CManager istance
+
+   SYNOPSIS
+    handle = CM_StartCManagerA(attrs)
+    D0                       A0   A1
+
+    APTR CM_StartCManager( struct TagItems *);
+
+    handle = CM_StartManager(tag1,...)
+    D0                       A0
+
+    APTR CM_StartCManager( Tag1, ... );
+
+   FUNCTION
+    Starts a CM instance and returns its handle.
+
+    If you call CM_FreeHandle(), the CM instance is closed.
+
+    Remember to call CM_FreeHandle() before closing
+    CManager.library .
+
+    The attributes you may pass are:
+
+    o CMSTARTA_File (STRPTR)
+      The data to load, default NULL
+
+    o CMSTARTA_PubScreen (STRPTR)
+      Public screen name to open on, default NULL
+
+    o CMSTARTA_HideUsers (BOOL)
+      Hide users, default FALSE
+
+    o CMSTARTA_HideWWW (BOOL)
+      Hide WWW sites, default FALSE
+
+    o CMSTARTA_HideFTP (BOOL)
+      Hide FTP sites, default FALSE
+
+    o CMSTARTA_HideChat (BOOL)
+      Hide chat entries, default FALSE
+
+    o CMSTARTA_HideTelnet (BOOL)
+      Hide telnet hosts, default FALSE
+
+   RESULT
+    handle - the CM handle or NULL
+
+   SEE
+    CM_StartManager()
+

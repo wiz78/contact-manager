@@ -1,0 +1,52 @@
+
+CManager Release 34.3
+- A MUI class was not disposed: fixed
+- Some little workaround in card class to make it
+  work fine with MUI4.
+- Other small changes and bug fixes
+
+CManager Release 34.2
+- Fixed prfs window
+- Added ATC io (lame, indeed)
+- Many other minor changes and fixes
+
+CManager Release 34.1
+- Fixed a crash when exporting URLs to HTML in 68k version
+- Fixed a bug when exporting URLs to HTML in MOS version
+
+CManager Release 34.0
+- Lots of changes and bug fixes
+
+CManager Release 31.4
+- After importing the groups list goes to the imported
+  group while the entry list doesn't: fixed
+- Version 31.3 importing Firefox bookmarks bug: removed
+- DB is now read via AsyncIO if available
+- Many small debug
+
+
+CManager Release 31.3
+- Changes to follows codesets.library 2 api
+- Smarter db reading and saving
+- Reduced memory allocation: many things are now stack
+  buffered
+- Compiled to use less stack
+
+
+CManager Release 31.0
+
+- Fixed YAM import
+- Fixed Firefox import
+- Codesets stuff moved outside to codesets.library
+- Some minor changes
+
+
+CManager Release 30.2
+
+- Added NoSort options for people that want to handle with
+  imported databases in a clean way. If NoSort is set,
+  you can't sort entries, but you drag them aorund.
+
+- Added Firefox hotlist
+
+- Some minor changes and debugging.

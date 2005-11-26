@@ -1,0 +1,82 @@
+# Make file for CManager.mcc
+
+TARGET = CManager.mcc
+
+# Compiler
+C_COMPILER = sc
+
+C_OPTIMIZE = OPTIMIZE OPTSCHEDULE NOOPTSIZE OPTTIME OPTINLINE NOOPTINLOCAL\
+OPTLOOP NOOPTALIAS OPTPEEP
+
+C_COMPILER_OPTS = PARAMS=r NOCHECKABORT NOSTACKCHECK NOSTACKEXTEND STRINGMERGE\
+COMMENTNEST IDLEN=128 IGNORE=315 IGNORE=317 INCLUDEDIR=/include\
+$(C_OPTIMIZE)
+
+# Assembler
+ASSEMBLER = a68k
+ASSEMBLER_OPTS = -iainc:
+
+# Linker
+LINKER = slink
+LINKER_OPTS = NOICONS SC SD ND
+
+# Objects
+OBJECTS = libent.o libinit.o endcode.o init.o loc.o utils.o options.o lamp.o popph.o card.o prefs.o search.o login.o\
+entrylist.o grouplist.o dial.o pic.o delwarning.o rootscrollgroup.o rootstring.o rootscroll.o\
+rootbar.o qstring.o popupcodesets.o popasl.o editWin.o editUser.o editWWW.o editFTP.o editIRC.o\
+minimail.o editTelnet.o import.o export.o matherwin.o mcc.o
+
+# Libs
+LIBS = LIB:sc.lib LIB:amiga.lib LIB:debug.lib
+
+# Built module
+$(TARGET): $(OBJECTS) $(LIBS)
+         $(LINKER) <with <
+FROM $(OBJECTS) TO $(TARGET) LIB $(LIBS) $(LINKER_OPTS)
+<
+         avail flush
+
+# Rules
+.c.o:
+        $(C_COMPILER) $*.c $(C_COMPILER_OPTS)
+
+.asm.o:
+        $(ASSEMBLER) $(ASSEMBLER_OPTS) $*.asm
+
+# Dependences
+libent.o:          libent.asm CManager.mcc_rev.i
+libinit.o:         libinit.c class.h CManager.mcc_rev.h base.h class_protos.h
+endcode.o:         endcode.asm
+init.o:            init.c class.h base.h class_protos.h
+loc.o:             loc.c class.h base.h class_protos.h
+utils.o:           utils.c class.h base.h class_protos.h
+options.o:         options.c class.h base.h class_protos.h
+lamp.o:            lamp.c class.h base.h class_protos.h
+popph.o:           popph.c class.h base.h class_protos.h
+card.o:            card.c class.h base.h class_protos.h
+prefs.o:           prefs.c class.h base.h class_protos.h
+search.o:          search.c class.h base.h class_protos.h
+login.o:           login.c class.h base.h class_protos.h
+entrylist.o:       entrylist.c class.h base.h class_protos.h
+grouplist.o:       grouplist.c class.h base.h class_protos.h
+dial.o:            dial.c class.h base.h class_protos.h
+pic.o:             pic.c class.h base.h class_protos.h
+minimail.o:        minimail.c class.h base.h class_protos.h
+delwarning.o:      delwarning.c class.h base.h class_protos.h
+rootScrollgroup.o: rootScrollgroup.c class.h base.h class_protos.h
+rootString.o:      rootString.c class.h base.h class_protos.h
+rootScroll.o:      rootScroll.c class.h base.h class_protos.h
+rootbar.o:         rootbar.c class.h base.h class_protos.h
+qstring.o:         qstring.c class.h base.h class_protos.h
+popupcodesets.o:   popupcodesets.c class.h base.h class_protos.h
+popasl.o:          popasl.c class.h base.h class_protos.h
+editWin.o:         editWin.c class.h base.h class_protos.h
+editUser.o:        editUser.c class.h base.h class_protos.h
+editWWW.o:         editWWW.c class.h base.h class_protos.h
+editFTP.o:         editFTP.c class.h base.h class_protos.h
+editIRC.o:         editIRC.c class.h base.h class_protos.h
+editTelnet.o:      editTelnet.c class.h base.h class_protos.h
+import.o:          import.c class.h base.h class_protos.h
+export.o:          export.c class.h base.h class_protos.h
+matherwin.o:       matherwin.c class.h base.h class_protos.h
+mcc.o:             mcc.c class.h base.h class_protos.h
