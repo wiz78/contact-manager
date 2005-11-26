@@ -1,0 +1,334 @@
+Storm Shell Project (0013)
+Settings (Start)
+C/C++ Environment
+"StormC:include"
+"/STFax/Library"
+Includepath (End)
+0 "" 80
+1 "objects"
+C/C++ Preprozessor
+1 "NDEBUG" ""
+0 "DEBUG" ""
+Defines (End)
+1 1 1
+C/C++ Options
+0 0 0 2 0 0 0 0 0 1 0 0 0 0 0
+C/C++ Optimizer
+9
+C/C++ Warnings
+1 1 1 1 1 1 0 1
+Assembler
+0 ""
+0 "CON://640/200/Storm Assembler/AUTO/WAIT/SCREEN StormScreen"
+0 0
+0 1 60 0 1 0 0 20 0
+Sets (End)
+0 1 0 0 0 2 1 0 0
+1 1 1 1 0 0 0 0 0
+1 0
+0 0 0 0 0
+Linker
+0 0 "PROGDIR:startup.o" 0 0 1 0 0 0 0
+"StormC:lib/" 0 "StormC:lib/logfile" 0 1 1
+0 "_WizardSurface"
+0 0 50 0 50 0 50 0 0
+0 0 0 0 0 0 0 0
+Run
+30 "" "" "" 0
+""
+
+1 "CON://400/180/Storm Console/AUTO/WAIT/SCREEN StormScreen" "RAM:Output" "RAM:Input"
+1 0
+0 0 0 "" ""
+Settings (End)
+File
+1 "main.c"
+"main.c"
+"Work2:Projects/Contact_Manager/CManager.h"
+"Work2:Projects/Contact_Manager/main.h"
+"Work2:Projects/Contact_Manager/mui.h"
+"Work2:Projects/Contact_Manager/rexx.h"
+"Work2:Projects/Contact_Manager/import.h"
+"Work2:Projects/Contact_Manager/locale.h"
+"Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+"Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+"Work2:Projects/Contact_Manager/about.h"
+"Work2:Projects/Contact_Manager/Library/CManagerMsg.h"
+"Work2:Projects/Contact_Manager/prefs.h"
+"Work2:Projects/Contact_Manager/CManager_rev.h"
+"Work2:Projects/Contact_Manager/MCC/CManager_mcc.h"
+"Work2:Projects/Contact_Manager/MCC/entrylist.h"
+"Work2:Projects/Contact_Manager/MCC/grouplist.h"
+Storm Shell Project (Dependencies)
+"objects/main.o" "objects/main.debug"
+""
+"objects/main.o" "objects/main.debug"
+File
+1 "mui.c"
+"mui.c"
+"Work2:Projects/Contact_Manager/MUI.h"
+"Work2:Projects/Contact_Manager/main.h"
+"Work2:Projects/Contact_Manager/import.h"
+"Work2:Projects/Contact_Manager/Locale.h"
+"Work2:Projects/Contact_Manager/about.h"
+"Work2:Projects/Contact_Manager/Library/CManagerMsg.h"
+"Work2:Projects/Contact_Manager/prefs.h"
+"Work2:Projects/Contact_Manager/MCC/entrylist.h"
+"Work2:Projects/Contact_Manager/MCC/grouplist.h"
+"Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+"Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+"Work2:Projects/Contact_Manager/MCC/CManager_mcc.h"
+Storm Shell Project (Dependencies)
+"objects/mui.o" "objects/mui.debug"
+""
+"objects/mui.o" "objects/mui.debug"
+File
+1 "rexx.c"
+"rexx.c"
+"Work2:Projects/Contact_Manager/CManager.h"
+"Work2:Projects/Contact_Manager/main.h"
+"Work2:Projects/Contact_Manager/mui.h"
+"Work2:Projects/Contact_Manager/MCC/CManager_mcc.h"
+Storm Shell Project (Dependencies)
+"objects/rexx.o" "objects/rexx.debug"
+""
+"objects/rexx.o" "objects/rexx.debug"
+File
+1 "import.c"
+"import.c"
+"Work2:Projects/Contact_Manager/CManager.h"
+"Work2:Projects/Contact_Manager/main.h"
+"Work2:Projects/Contact_Manager/import.h"
+"Work2:Projects/Contact_Manager/MUI.h"
+"Work2:Projects/Contact_Manager/locale.h"
+"Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+"Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+Storm Shell Project (Dependencies)
+"objects/import.o" "objects/import.debug"
+""
+"objects/import.o" "objects/import.debug"
+File
+1 "about.c"
+"about.c"
+"Work2:Projects/Contact_Manager/about.h"
+"Work2:Projects/Contact_Manager/mui.h"
+"Work2:Projects/Contact_Manager/CManager.h"
+"Work2:Projects/Contact_Manager/CManager_rev.h"
+"Work2:Projects/Contact_Manager/locale.h"
+"Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+"Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+Storm Shell Project (Dependencies)
+"objects/about.o" "objects/about.debug"
+""
+"objects/about.o" "objects/about.debug"
+File
+1 "version.c"
+"version.c"
+"Work2:Projects/Contact_Manager/CManager_rev.h"
+Storm Shell Project (Dependencies)
+"objects/version.o" "objects/version.debug"
+""
+"objects/version.o" "objects/version.debug"
+File
+1 "prefs.c"
+"prefs.c"
+"Work2:Projects/Contact_Manager/CManager.h"
+"Work2:Projects/Contact_Manager/mui.h"
+"Work2:Projects/Contact_Manager/prefs.h"
+"Work2:Projects/Contact_Manager/locale.h"
+"Work2:Projects/Contact_Manager/main.h"
+"Work2:Projects/Contact_Manager/import.h"
+"Work2:Projects/Contact_Manager/MCC/CManager_mcc.h"
+"Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+"Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+"Work2:Projects/Contact_Manager//SpeedBar/SpeedBar_mcc.h"
+"Work2:Projects/Contact_Manager//SpeedBar/SpeedBarCfg/SpeedBarCfg_mcc.h"
+Storm Shell Project (Dependencies)
+"objects/prefs.o" "objects/prefs.debug"
+""
+"objects/prefs.o" "objects/prefs.debug"
+Section
+1 1 100
+File
+2 "mui.h"
+"mui.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "main.h"
+"main.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Locale.h"
+"Locale.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "rexx.h"
+"rexx.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "import.h"
+"import.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "CManager.h"
+"CManager.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+"Work2:Projects/Contact_Manager/Library/CManager_protos.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+"Work2:Projects/Contact_Manager/Library/CManager_lib_lib.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "about.h"
+"about.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "CManager_rev.h"
+"CManager_rev.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager/Library/CManagerMsg.h"
+"Work2:Projects/Contact_Manager/Library/CManagerMsg.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "prefs.h"
+"prefs.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager/MCC/CManager_mcc.h"
+"Work2:Projects/Contact_Manager/MCC/CManager_mcc.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager/MCC/entrylist.h"
+"Work2:Projects/Contact_Manager/MCC/entrylist.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager/MCC/grouplist.h"
+"Work2:Projects/Contact_Manager/MCC/grouplist.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+File
+2 "Work2:Projects/Contact_Manager//SpeedBar/SpeedBar_mcc.h"
+"Work2:Projects/Contact_Manager//SpeedBar/SpeedBar_mcc.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+2 "Work2:Projects/Contact_Manager//SpeedBar/SpeedBarCfg/SpeedBarCfg_mcc.h"
+"Work2:Projects/Contact_Manager//SpeedBar/SpeedBarCfg/SpeedBarCfg_mcc.h"
+Storm Shell Project (Dependencies)
+"" ""
+""
+Section
+2 0 95
+Section
+12 0 90
+File
+15 "CManager.cd"
+"CManager.cd"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+15 "Work2:Projects/Contact_Manager/Catalogs/CManager_ITA.ct"
+"Work2:Projects/Contact_Manager/Catalogs/CManager_ITA.ct"
+Storm Shell Project (Dependencies)
+"" ""
+""
+Section
+15 1 80
+File
+10 "CManager"
+"CManager"
+Storm Shell Project (Dependencies)
+"" ""
+""
+"CManager.link"
+Section
+10 1 40
+File
+6 "History.txt"
+"History.txt"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+6 "ContactManager.txt"
+"ContactManager.txt"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+6 "CountryCodes.txt"
+"CountryCodes.txt"
+Storm Shell Project (Dependencies)
+"" ""
+""
+Section
+6 1 10
+File
+5 "storm.lib"
+"storm.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "amiga.lib"
+"amiga.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "extra_funcs.lib"
+"extra_funcs.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "debug.lib"
+"debug.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+File
+5 "libgmp.lib"
+"libgmp.lib"
+Storm Shell Project (Dependencies)
+"" ""
+""
+Section
+5 0 -50
+Storm Shell Project (End)

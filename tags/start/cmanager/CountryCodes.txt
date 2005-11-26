@@ -1,0 +1,200 @@
+"Egypt" "Aegypten" 20
+"Guinea" "Equatorial Guinea" 240
+"Etiopia" "Aethiopien" 251
+"Albania" "Albania" 355
+"Algeria" "Algery" 213
+"Samoa" "Samoa" 684
+"Andorra" "Andorra" 376
+"Angola" "Angola" 244
+"Anguilla" "Anguilla" 1809
+"Antigua and Barbuda" "Antigua" 1809
+"Argentina" "Argentinien" 54
+"Armenia" "Armenien" 374
+"Aruba" "Aruba" 297
+"Ascension" "Ascension" 247
+"Australia" "Australien" 61
+"Bahamas" "Bahamas" 1809
+"Bahrain" "Bahrain" 973
+"Bangladesch" "Bangladesh" 880
+"Barbados" "Barbados" 1809
+"Belgium" "Belgique" 32
+"Belize" "Belize" 501
+"Benin" "Benin" 229
+"Bermuda" "Bermuda" 1809
+"Bhutan" "Bhutan" 975
+"Birma" "Birma" 95
+"Bolivia" "Bolivien" 591
+"Botsuana" "Botsuana" 267
+"Brazil" "Brasilien" 55
+"Brunei" "Brunei" 673
+"Bulgary" "Bulgarien" 359
+"Burkina" "BurkinaFaso" 226
+"Burundi" "Burundi" 257
+"Canada" "Kanada" 107
+"Cile" "Chile" 56
+"Cina" "China" 86
+"Columbia" "Kolumbien" 57
+"Cookinseln" "Cookinseln" 682
+"Costa Rica" "Costa Rica" 506
+"Cuba" "Kuba" 53
+"Denmark" "Daenemark" 45
+"Dominica" "Dominikanische Republik" 1809
+"Ecuador" "Ecuador" 593
+"El Salvador" "El Salvador" 503
+"Eritrea" "Eritrea" 291
+"Estland" "Estland" 372
+"Faerøer" "Faeroeer" 298
+"Falkland" "Falklandinseln" 500
+"Fidschi" "Fidschi" 679
+"Finland" "Finnland" 358
+"France" "Frankreich" 33
+"French Guayana" "Franzoesisch-Guayana" 594
+"French Polynesia" "Franzoesisch-Polynesien" 689
+"Gabun" "Gabun" 241
+"Gambia" "Gambia" 220
+"Germany" "Deutschland" 49
+"Ghana" "Ghana" 233
+"Gibraltar" "Gibraltar" 350
+"Grenada" "Grenada" 1809
+"Griechenland" "Griechenland" 30
+"Groenland" "Groenland" 299
+"Grossbritannien" "Grossbritannien" 44
+"Guadeloupe" "Guadeloupe" 590
+"Guam" "Guam" 671
+"Guatemala" "Guatemala" 502
+"Guinea" "Guinea" 224
+"Guinea"-"GuineaBissau" 245
+"Guyana" "Guyana" 592
+"Haiti" "Haiti" 509
+"Honduras" "Honduras" 504
+"Hong Kong" "Hongkong" 852
+"India" "Indien" 91
+"Indischer" "IndischerOzean" 873
+"Indonesia" "Indonesien" 62
+"England" "Insel Man" 44
+"Iraq" "Irak" 964
+"Iran" "Iran" 98
+"Ireland" "Irland" 353
+"Island" "Island" 354
+"Israel" "Israel" 972
+"Italia" "Italy" 39
+"Jamaika" "Jamaika" 1876
+"Japan" "Japan" 81
+"Jemen" "Jemen" 967
+"Jordania" "Jordanien" 962
+"Kambodscha" "Kambodscha" 855
+"Kamerun" "Kamerun" 237
+"Capo Verde" "Kap Verde" 238
+"Katar" "Katar" 974
+"Kenia" "Kenia" 254
+"Kiribati" "Kiribati" 686
+"Kongo" "Kongo" 242
+"Korea" "Korea" 82
+"Kroatien" "Croatia" 385
+"Kuwait" "Kuwait" 965
+"Laos" "Laos" 856
+"Lesotho" "Lesotho" 266
+"Lettland" "Lettland" 371
+"Libano" "Libanon" 961
+"Liberia" "Liberia" 231
+"Libyen" "Libia" 218
+"Liechtenstein" "Liechtenstein" 4175
+"Lituania" "Litauen" 370
+"Luxemburg" "Luxemburg" 352
+"Macau" "Macau" 853
+"Madagaskar" "Madagaskar" 261
+"Malawi" "Malawi" 265
+"Malaysia" "Malaysia" 60
+"Maldive" "Malediven" 960
+"Mali" "Mali" 223
+"Malta" "Malta" 356
+"Marianen" "Marianen" 670
+"Marocco" "Marokko" 212
+"Marshallinseln" "Marshallinseln" 692
+"Martinique" "Martinique" 596
+"Mauretania" "Mauretanien" 222
+"Mauritius" "Mauritius" 230
+"Mayotte" "Mayotte" 269
+"Mazedonien" "Mazedonien" 389
+"Mexico" "Mexiko" 52
+"Micronesia" "Mikronesien" 691
+"Monaco" "Monaco" 3393
+"Mongolei" "Mongolei" 976
+"Montserrat" "Montserrat" 1809
+"Mozambico" "Mosambik" 258
+"Namibia" "Namibia" 264
+"Nauru" "Nauru" 674
+"Nepal" "Nepal" 977
+"Neukaledonien" "Neukaledonien" 687
+"New Zeland" "Neuseeland" 64
+"Nicaragua" "Nicaragua" 505
+"Antille" "Niederlaendische Antillen" 599
+"Nederland" "Niederlande" 31
+"Niger" "Niger" 227
+"Nigeria" "Nigeria" 234
+"Niue Inseln" "Niue Inseln" 683
+"Eire" "Nordirland" 44
+"Norwegen" "Norwege" 47
+"Obervolta" "Obervolta" 226
+"Oesterreich" "Oesterreich" 43
+"Oman" "Oman" 968
+"Pakistan" "Pakistan" 92
+"Palau" "Palau" 680
+"Panama" "Panama" 507
+"Papua New Guinea" "Papua Neuguinea" 675
+"Paraguay" "Paraguay" 595
+"Peru" "Peru" 51
+"Philippinen" "Philippinen" 63
+"Polen" "Polen" 48
+"Portugal" "Portugal" 351
+"Puerto" "PuertoRico" 1809
+"Reunion" "Reunion" 262
+"Ruanda" "Ruanda" 250
+"Rumaenien" "Rumaenien" 40
+"Salomonen" "Salomonen" 677
+"Sambia" "Sambia" 260
+"Samoa" "Samoa" 685
+"San" "SanMarino" 378
+"Sansibar" "Zanzibar" 259
+"Saotome" "SaoTome und Principe" 239
+"Saudi Arabia" "Saudi Arabien" 966
+"Sweden" "Schweden" 46
+"Suisse" "Schweiz" 41
+"Svizzera" "Schwitzerland" 41
+"Senegal" "Senegal" 221
+"Seichelle" "Seschellen" 248
+"Sierra Leone" "Sierra Leone" 232
+"Zimbawe" "Simbabwe" 263
+"Singapore" "Singapur" 65
+"Czech Republic" "Czech Republic" 42
+"Russia" "Russia" 7
+"Slovenia" "Slowenien" 386
+"Somalia" "Somalia" 252
+"Spanien" "España" 34
+"Sri Lanka" "Sri Lanka" 94
+"Sudan" "Sudan" 249
+"Sud Africa" "Suedafrika" 27
+"Suriname" "Suriname" 597
+"Swasiland" "Swasiland" 268
+"Siria" "Syrien" 963
+"Taiwan" "Taiwan" 886
+"Tansania" "Tansania" 255
+"Thailand" "Thailand" 66
+"Togo" "Togo" 228
+"Tokelan" "Tokelan" 690
+"Tonga" "Tonga" 676
+"Turkey" "Tuerkei" 90
+"Tunesien" "Tunesien" 216
+"Tuvalu" "Tuvalu" 688
+"Uganda" "Uganda" 256
+"Ucraine" "Ukraine" 380
+"Ungarn" "Ungarn" 36
+"Uruguay" "Uruguay" 598
+"Vanuatu" "Vanuatu" 678
+"Vatikanstadt" "Vatikanstadt" 396
+"Venezuela" "Venezuela" 58
+"Arabian Emirate" "Arabische Emirate" 971
+"USA" "United States of America" 1
+"Vietnam" "Vietnam" 84
+"Zaire" "Zaire" 243
+"UK" "United Kingdom" 44

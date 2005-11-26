@@ -1,0 +1,673 @@
+MSG_APP_DESCRIPTION (//)
+Global bookmarks manager
+;
+GAD_ADD_GROUP (//)
+_Add
+;
+GAD_ADD_ENTRY (//)
+Add Entr_y
+;
+GAD_CLONE_ENTRY (//)
+_Clone Entry
+;
+GAD_REMOVE (//)
+_Remove
+;
+GAD_REM_GROUP (//)
+R_emove
+;
+WND_ADD_GROUP (//)
+Add group
+;
+GAD_GROUP_NAME (//)
+Group _name:
+;
+GAD_OK (//)
+_Ok
+;
+GAD_CANCEL (//)
+_Cancel
+;
+MSG_USERS (//)
+Users
+;
+MSG_FTP (//)
+FTP Sites
+;
+MSG_WWW (//)
+WWW Sites
+;
+MSG_CHAT (//)
+Chat
+;
+MSG_NAME (//)
+_Name
+;
+MSG_FIRST_NAME (//)
+First _Name
+;
+MSG_LAST_NAME (//)
+Last Na_me
+;
+MSG_ADDRESS (//)
+Addres_s
+;
+MSG_CITY (//)
+Cit_y
+;
+MSG_COUNTRY (//)
+Co_untry
+;
+MSG_ZIP (//)
+_ZIP
+;
+MSG_COMMENT (//)
+Co_mment
+;
+GAD_PHONE (//)
+_Phone
+;
+MSG_FAX (//)
+Fa_x
+;
+MSG_EMAIL (//)
+_E-Mail
+;
+GAD_WWW (//)
+_WWW
+;
+GAD_FTP (//)
+_FTP
+;
+GAD_TO_WWW (//)
+Send to Browser
+;
+GAD_TO_FTP (//)
+Send to FTP
+;
+GAD_TO_EMAIL (//)
+Send EMail
+;
+GAD_TO_PHONE (//)
+Dial
+;
+GAD_TO_FAX (//)
+Send Fax
+;
+MSG_TO_DOPUS (//)
+Send DOpus FTP
+;
+HELP_REMOVE (//)
+Remove the selected entry
+;
+HELP_ADD_ENTRY (//)
+Add a new entry to the list
+;
+HELP_CLONE_ENTRY (//)
+Duplicate the selected entries
+;
+HELP_EDIT (//)
+Open the Edit window for the selected entries
+;
+HELP_SORT (//)
+Sort alphabetically the list
+;
+MENU_PROJECT (//)
+Project
+;
+MENU_ABOUT (//)
+About...
+;
+KEY_ABOUT (//)
+?
+;
+MENU_ABOUT_MUI (//)
+About MUI...
+;
+MENU_OPEN (//)
+Open...
+;
+KEY_OPEN (//)
+O
+;
+MENU_SAVE (//)
+Save
+;
+KEY_SAVE (//)
+S
+;
+MENU_SAVE_AS (//)
+Save as...
+;
+KEY_SAVE_AS (//)
+A
+;
+MENU_QUIT (//)
+Quit
+;
+KEY_QUIT (//)
+Q
+;
+GAD_ADVANCED_OPTIONS (//)
+_Advanced options
+;
+GAD_ANONYMOUS_LOGIN (//)
+Anon_ymous login
+;
+GAD_USERNAME (//)
+_Username
+;
+GAD_PASSWORD (//)
+_Password
+;
+GAD_ADT (//)
+A_DT server
+;
+GAD_QUIET (//)
+_Quiet
+;
+GAD_RETRIES (//)
+_Retries
+;
+GAD_COMPRESSION (//)
+_Compression
+;
+GAD_PORT (//)
+P_ort
+;
+HDR_NAME (//)
+Name
+;
+HDR_COMMENT (//)
+Comment
+;
+HDR_SITE (//)
+Site
+;
+HDR_EMAIL (//)
+EMail
+;
+WND_EDIT_USER (//)
+Edit user
+;
+WND_EDIT_WWW (//)
+Edit WWW site data
+;
+WND_EDIT_FTP (//)
+Edit FTP site data
+;
+GAD_EDIT (//)
+E_dit
+;
+GAD_SEARCH (//)
+_Search
+;
+GAD_FROM_TOP (//)
+From _top
+;
+GAD_BACKWARDS (//)
+_Backwards
+;
+MENU_OPTIONS (//)
+Database
+;
+MENU_SEARCH (//)
+Search...
+;
+GAD_SEARCH_FOR (//)
+Search _for:
+;
+MENU_IMPORT (//)
+Import
+;
+MENU_V_HOTLIST (//)
+Voyager Hotlist...
+;
+MENU_THOR_USERS (//)
+THOR User list...
+;
+MENU_IB_HOTLIST (//)
+IBrowse Hotlist...
+;
+MENU_AWEB_HOTLIST (//)
+AWeb Hotlist...
+;
+MENU_AMFTP_PROFILES (//)
+AmFTP Profiles...
+;
+MENU_DOPUS_FTP (//)
+DOpus FTP sites
+;
+MENU_MD_ADDRESSES (//)
+Microdot 2 Addressbook...
+;
+MENU_YAM_ADDRESSES (//)
+YAM Addressbook...
+;
+MENU_STFAX_PHONEBOOK (//)
+STFax Phonebook...
+;
+MENU_AMIRC_SERVERS (//)
+AmIRC Servers...
+;
+MENU_SETTINGS (//)
+Settings
+;
+MENU_CMANAGER (//)
+Contact Manager...
+;
+MENU_MUI (//)
+MUI...
+;
+GAD_ALIAS (//)
+_Alias
+;
+GAD_SORT (//)
+_Sort
+;
+MSG_ABOUT (//)
+Contact Manager %ld.%ld\n\
+©1998-1999 by Simone Tellini\n\
+\n\
+Thanks to Oliver 'Olli' Wagner for his help.\n\
+\n\
+Special greetings to Federico 'x-Fede' Pomi,\n\
+Luca 'ElleDi' Danelon, Gian Maria 'Giangi' Calzolari,\n\
+the \"This doesn't werk, you suck!\" team,\n\
+Alex 'Leto' Pagnoni and all the #amigaita guys.\n\
+\n\
+Based on an idea of Chris Wiles.
+;
+GAD_MORE (//)
+_More
+;
+MSG_REGISTERED (//)
+This copy of CManager is registered to\n%s (%ld)
+;
+GAD_WEBMASTER (//)
+Web_Master
+;
+MSG_NOT_SAVED (//)
+Some changes have been made!\n\
+What do you want to do?
+;
+ANS_SAVE_QUIT_CANCEL (//)
+*_Save|_Quit|_Cancel
+;
+MENU_JOIN_CHANNEL (//)
+Join channel
+;
+HDR_CHANNEL (//)
+Channel
+;
+HDR_SERVER (//)
+Server
+;
+GAD_CHANNEL (//)
+C_hannel
+;
+GAD_SERVER (//)
+_Server
+;
+GAD_MAINTAINER (//)
+_Maintainer
+;
+GAD_NICK (//)
+_Nick
+;
+GAD_WEB_SITE (//)
+_Web Site
+;
+WND_EDIT_CHAT (//)
+Edit IRC Channel
+;
+MSG_PATHS (//)
+Hotlists
+;
+GAD_V (//)
+_Voyager
+;
+GAD_IB (//)
+_IBrowse
+;
+GAD_MD2 (//)
+_MicroDot II
+;
+GAD_YAM (//)
+_YAM
+;
+GAD_STFAX (//)
+ST_Fax
+;
+GAD_AWEB (//)
+_AWeb
+;
+GAD_AMFTP (//)
+Am_FTP
+;
+GAD_AMIRC (//)
+AmI_RC
+;
+GAD_USE (//)
+_Use
+;
+GAD_SAVE (//)
+_Save
+;
+GAD_SILENT_SCAN (//)
+Si_lent Scan
+;
+HELP_SILENT_SCAN (//)
+If set, Contact Manager will re-import your\n\
+bookmarks if they have changed without asking\n\
+for confirmation.
+;
+GAD_FROM_LOCALE (//)
+_Get from Locale
+;
+HELP_COUNTRY (//)
+Enter here the name of the country you live in
+;
+GAD_COUNTRY_CODE (//)
+Country Code
+;
+HELP_COUNTRY_CODE (//)
+Your country telephone prefix
+;
+MSG_HOTLIST_CHANGED (//)
+The hotlist \"%s\" has changed.\n\
+Shall I import it again?
+;
+ANS_OK_CANCEL (//)
+*_Ok|_Cancel
+;
+HELP_USER_IMAGE (//)
+Click here to change the image
+;
+GAD_MOBILE (//)
+Mo_bile
+;
+MSG_ON_DOUBLE_CLICK (//)
+_Double-click:
+;
+HELP_DOUBLE_CLICK (//)
+Action to perform when double-clicking on FTP or WWW entries
+;
+MSG_EDIT_ENTRIES (//)
+to edit WWW/FTP entries
+;
+MSG_START_SCRIPT (//)
+to start ARexx script
+;
+MSG_SCRIPT_AND_CLOSE (//)
+to start ARexx script and quit
+;
+GAD_DOPUSFTP (//)
+DOp_us FTP
+;
+MSG_DOPUS_FTP (//)
+DOpus FTP
+;
+MSG_LOCAL_LISTER (//)
+_Local lister
+;
+MSG_DEFAULT_FTP (//)
+_Default FTP target
+;
+GAD_OPEN_URL (//)
+Use _OpenURL library
+;
+MSG_DIALLER (//)
+Dialer
+;
+GAD_USE_DIALLER (//)
+Use internal dialer
+;
+MSG_USE_EXT_DIALER (//)
+Use external dial interface
+;
+GAD_DEVICE (//)
+_Device
+;
+GAD_UNIT (//)
+Uni_t
+;
+GAD_SHARED (//)
+S_hared
+;
+GAD_INIT_STRING (//)
+_Modem init
+;
+GAD_DIAL_COMMAND (//)
+Dial c_ommand
+;
+MSG_PROGRAMS (//)
+Programs
+;
+GAD_MAILER (//)
+_Mailer
+;
+MSG_SCRIPT (//)
+Script
+;
+MSG_PATH (//)
+Path
+;
+GAD_IRC (//)
+_IRC
+;
+GAD_PROGRAM (//)
+_Program
+;
+MSG_LOCALE (//)
+Locale
+;
+MSG_MISC (//)
+Misc
+;
+MSG_DIALER_PLACEHOLDERS (//)
+(%s will be replaced with the phone number to dial)
+;
+MSG_DIALLING (//)
+Dialling %s...\n(attempt %ld/%ld)
+;
+ERR_NO_DEVICE (//)
+Cannot open unit %ld of %s!
+;
+GAD_REDIAL_DELAY (//)
+_Redial Delay
+;
+GAD_REDIAL_ATTEMPTS (//)
+R_edial Attempts
+;
+MSG_WAITING (//)
+Waiting... (%ld)
+;
+ANS_RETRY_CANCEL (//)
+*_Retry|_Cancel
+;
+MSG_PHONE (//)
+Phone
+;
+MSG_MOBILE (//)
+Mobile
+;
+GAD_MODEM_TYPE (//)
+Modem t_ype
+;
+ERR_MODEM_NOT_RESPONDING (//)
+No response from the modem.\n\
+Have you turned it on?
+;
+GAD_ICQ (//)
+IC_Q
+;
+MSG_TO_CLIP (//)
+Copy to clipboard
+;
+MSG_HOME (//)
+Home
+;
+MSG_BUSINESS (//)
+Business
+;
+MSG_NOTES (//)
+Notes
+;
+GAD_DEPARTMENT (//)
+_Department:
+;
+GAD_JOB_TITLE (//)
+_Job Title:
+;
+GAD_OFFICE (//)
+O_ffice:
+;
+GAD_COMPANY (//)
+Compan_y:
+;
+MSG_LIMIT (//)
+Sorry, you have reached the limit for\n\
+the demo version.\n\n\
+Please consider registering.
+;
+MENU_DFA_ADDRESSES (//)
+DFA Addresses...
+;
+GAD_DFA (//)
+_DFA
+;
+MENU_UMS_GOODNEWS (//)
+UMS - GoodNews Addresses...
+;
+GAD_GOODNEWS (//)
+UMS - GoodNe_ws
+;
+MENU_UMS_PINT (//)
+UMS - PINT Addresses...
+;
+GAD_UMS (//)
+U_MS - PINT
+;
+GAD_SAVE_ON_EXIT (//)
+Save on e_xit
+;
+HELP_SAVE_ON_EXIT (//)
+If set Contact Manager will automatically\n\
+save the database when quitting, if changes\n\
+were done.
+;
+MENU_STRICQ_USERS (//)
+STRICQ Users...
+;
+GAD_STRICQ_USERS (//)
+STRIC_Q Users
+;
+MSG_SCRIPT_AND_ICONIFY (//)
+to start ARexx script and iconify
+;
+GAD_PGP_ID (//)
+_PGP UserID
+;
+HDR_LAST_NAME (//)
+Last name
+;
+GAD_DONT_MOVE_COLUMNS (//)
+Don't move col_umns
+;
+HELP_DONT_MOVE_COLUMNS (//)
+If set, the column order in the user section\n\
+won't change according to the sort criteria used.
+;
+GAD_LOG_CALLS (//)
+Log to GenesisReport
+;
+MSG_BUSINESS_MOBILE (//)
+Business mobile
+;
+HDR_LAST_MODIFIED (//)
+Last modified
+;
+HDR_LAST_VISITED (//)
+Last visited
+;
+MSG_TELNET (//)
+Telnet
+;
+HDR_HOST (//)
+Host
+;
+GAD_HOST (//)
+_Host
+;
+GAD_LOGIN (//)
+_Login
+;
+WND_EDIT_TELNET (//)
+Edit Telnet Host
+;
+GAD_SSH (//)
+_SSH
+;
+MENU_EXPORT (//)
+Export
+;
+MENU_EXPORT_URL_HTML (//)
+URLs as HTML...
+;
+MENU_EXPORT_WWW_HTML (//)
+Web sites as HTML...
+;
+MENU_EXPORT_FTP_HTML (//)
+FTP sites as HTML...
+;
+MENU_EXPORT_USERS_CSV (//)
+Users as CSV...
+;
+MSG_GET_DB_DIR (//)
+Select the directory for CM's database...
+;
+ANS_SELECT_CANCEL (//)
+*_Select|_Cancel
+;
+MSG_NO_DIR_WARNING (//)
+Warning! CManager won't work properly if\n\
+you don't provide a directory where to store\n\
+its databases!\n\
+\n\
+Do you want to select the directory now?
+;
+GAD_SAVE_ON_CHANGES (//)
+Save on c_hanges
+;
+HELP_SAVE_ON_CHANGES (//)
+If set, CManager will save the database after\n\
+every change.
+;
+MGS_ADVANCED (//)
+Advanced
+;
+GAD_WINDOW_TYPE (//)
+_Window type
+;
+MSG_SINGLE_LIST (//)
+Single list
+;
+MSG_DUAL_LIST (//)
+Dual list
+;
+GAD_USE_PROXY (//)
+Use pro_xy
+;
+GAD_SHOW_HIDDEN (//)
+Show _hidden files
+;
+GAD_SHOW_FTP_OUTPUT (//)
+Show ftp o_utput
+;
+GAD_SEND_NOOP (//)
+Send _NOOPs
+;
+MSG_TOOLBAR (//)
+Toolbar
+;
