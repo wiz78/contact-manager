@@ -1,0 +1,578 @@
+TABLE OF CONTENTS
+
+CManager.mcc/CManager.mcc
+CManager.mcc/MUIA_CManager_AppDoubleClick
+CManager.mcc/MUIA_CManager_Changed
+CManager.mcc/MUIA_CManager_CMData
+CManager.mcc/MUIA_CManager_DisableCard
+CManager.mcc/MUIA_CManager_DisableQuick
+CManager.mcc/MUIA_CManager_DoubleClickObject
+CManager.mcc/MUIA_CManager_HideChat
+CManager.mcc/MUIA_CManager_HideFTP
+CManager.mcc/MUIA_CManager_HideTelnet
+CManager.mcc/MUIA_CManager_HideUsers
+CManager.mcc/MUIA_CManager_HideWWW
+CManager.mcc/MUIA_CManager_ListObject
+CManager.mcc/MUIA_CManager_NoBar
+CManager.mcc/MUIA_CManager_NoCard
+CManager.mcc/MUIA_CManager_NoGroups
+CManager.mcc/MUIA_CManager_NoMenu
+CManager.mcc/MUIA_CManager_NoQuick
+CManager.mcc/MUIA_CManager_Path
+CManager.mcc/MUIA_CManager_Prefs
+CManager.mcc/MUIA_CManager_ButtonsBar
+CManager.mcc/MUIA_CManager_TreeObject
+CManager.mcc/MUIM_CManager_AddEntry
+CManager.mcc/MUIM_CManager_Cleanup
+CManager.mcc/MUIM_CManager_DoubleClick
+CManager.mcc/MUIM_CManager_EditSelected
+CManager.mcc/MUIM_CManager_Export
+CManager.mcc/MUIM_CManager_Import
+CManager.mcc/MUIM_CManager_LoadData
+CManager.mcc/MUIM_CManager_Login
+CManager.mcc/MUIM_CManager_LoginWindow
+CManager.mcc/MUIM_CManager_PrefsWindow
+CManager.mcc/MUIM_CManager_Reload
+CManager.mcc/MUIM_CManager_SaveData
+CManager.mcc/MUIM_CManager_Search
+CManager.mcc/CManager.mcc
+
+--
+
+ Contact Manager - An Amiga Centralized Bookmarks System
+
+ Copyright 1999-2006 by Simone [wiz] Tellini <simone@tellini.info>
+ Copyright 2003-2006 by Alfonso [alfie] Ranieri <alforan@tin.it>
+ All Rights Are Reserved.
+
+ Destributed Under The Terms Of The LGPL II
+
+--
+CManager.mcc/MUIA_CManager_AppDoubleClick
+
+   NAME
+    MUIA_CManager_AppDoubleClick -- [IS..], struct Hook *
+
+   FUNCTION
+    Here you may define a hook to be called anytime the user
+    double-clicks on an entry.
+
+    It is called with arguments:
+        REG(a0) struct Hook *hook - the hook in itself
+        REG(a2) Object *obj - the CManager Object *
+        REG(a1) struct CMUser *entry - result from double click
+
+    Check entry->Type to switch among different types of entries.
+
+    Default NULL .
+
+   SEE
+    MUIA_CManager_DoubleClickObject
+
+CManager.mcc/MUIA_CManager_Changed
+
+   NAME
+    MUIA_CManager_Changed -- [..GN], BOOL
+
+   FUNCTION
+    It indicates that data has been modified since last saving.
+
+CManager.mcc/MUIA_CManager_CMdata
+
+   NAME
+    MUIA_CManager_CMdata -- [..G.], struct CMData *
+
+   FUNCTION
+    The data the object is currently handling.
+
+CManager.mcc/MUIA_CManager_DisableCard
+
+   NAME
+    MUIA_CManager_DisableCard -- [I...], ULONG
+
+   FUNCTION
+    If TRUE card view is completly disabled.
+    If FALSE card view is enabled.
+    Default FALSE.
+
+CManager.mcc/MUIA_CManager_DisableQuick
+
+   NAME
+    MUIA_CManager_DisableQuick -- [I...], ULONG
+
+   FUNCTION
+    If TRUE quick group is completly disabled.
+    If FALSE quick view is enabled.
+    Default FALSE.
+
+CManager.mcc/MUIA_CManager_DoubleClickObject
+
+   NAME
+    MUIA_CManager_DoubleClickObject -- [IS..], Object *
+
+   FUNCTION
+    If you are a smart MUI programmer, you use it instead of
+    MUIA_CManager_AppDoubleClick, because of hooks sucks.
+
+    Anytime the user double clicks an an entry, the CManager
+    object will do a
+
+    DoMethod(DoubleClickObject,MUIM_CManager_DoubleClick,entry);
+
+    where entry is the entry the user double-clicked on.
+
+    Default NULL .
+
+   SEE
+    MUIA_CManager_AppDoubleClick
+
+CManager.mcc/MUIA_CManager_HideChat
+
+   NAME
+    MUIA_CManager_HideChat -- [I...], BOOL
+
+   FUNCTION
+    Pass it as TRUE at init time to hide Chat data.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_HideFTP
+    MUIA_CManager_HideTelnet
+    MUIA_CManager_HideUsers
+    MUIA_CManager_HideWWW
+
+CManager.mcc/MUIA_CManager_HideFTP
+
+   NAME
+    MUIA_CManager_HideFTP -- [I...], BOOL
+
+   FUNCTION
+    Pass it as TRUE at init time to hide FTP data.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_HideChat
+    MUIA_CManager_HideTelnet
+    MUIA_CManager_HideUsers
+    MUIA_CManager_HideWWW
+
+CManager.mcc/MUIA_CManager_HideTelnet
+
+   NAME
+    MUIA_CManager_HideTelnet -- [I...], BOOL
+
+   FUNCTION
+    Pass it as TRUE at init time to hide Telnet data.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_HideChat
+    MUIA_CManager_HideFTP
+    MUIA_CManager_HideUsers
+    MUIA_CManager_HideWWW
+
+CManager.mcc/MUIA_CManager_HideUsers
+
+   NAME
+    MUIA_CManager_HideUsers -- [I...], BOOL
+
+   FUNCTION
+    Pass it as TRUE at init time to hide Users data.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_HideChat
+    MUIA_CManager_HideFTP
+    MUIA_CManager_HideTelnet
+    MUIA_CManager_HideWWW
+
+CManager.mcc/MUIA_CManager_HideWWW
+
+   NAME
+    MUIA_CManager_HideWWW -- [I...], BOOL
+
+   FUNCTION
+    Pass it as TRUE at init time to hide WWW data.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_HideChat
+    MUIA_CManager_HideFTP
+    MUIA_CManager_HideTelnet
+    MUIA_CManager_HideUsers
+
+CManager.mcc/MUIA_CManager_ListObject
+
+   NAME
+    MUIA_CManager_ListObject -- [..G.], Object *
+
+   FUNCTION
+    PRIVATE!
+
+CManager.mcc/MUIA_CManager_NoBar
+
+   NAME
+    MUIA_CManager_NoBar -- [ISGN], BOOL
+
+   FUNCTION
+    Switches on/off the buttons bar. If TRUE at init time, the
+    buttons bar is not created at all, so that it can't be set.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_NoGroups
+
+CManager.mcc/MUIA_CManager_NoCard
+
+   NAME
+    MUIA_CManager_NoCard -- [ISGN], ULONG
+
+   FUNCTION
+    If TRUE card view is disabled.
+    If FALSE card view is enabled.
+    Default TRUE.
+
+CManager.mcc/MUIA_CManager_NoGroups
+
+   NAME
+    MUIA_CManager_NoGroups -- [ISGN], BOOL
+
+   FUNCTION
+    Switches on/off the group controls gadgets.
+
+    Default FALSE .
+
+   SEE
+    MUIA_CManager_NoBar
+
+CManager.mcc/MUIA_CManager_NoMenu
+
+   NAME
+    MUIA_CManager_NoMenu -- [ISGN], BOOL
+
+   FUNCTION
+    Switches on/off the "Actions context menu" of the entries
+    list.
+
+    Default FALSE .
+
+CManager.mcc/MUIA_CManager_NoQuick
+
+   NAME
+    MUIA_CManager_NoQuick -- [ISGN], ULONG
+
+   FUNCTION
+    If TRUE quick group is disabled.
+    If FALSE quick group is enabled.
+    Default TRUE.
+
+CManager.mcc/MUIA_CManager_Path
+
+   NAME
+    MUIA_CManager_Path -- [..G.], STRPTR
+
+   FUNCTION
+    Use it to get the complete path to the
+    CManager application.
+
+CManager.mcc/MUIA_CManager_Prefs
+
+   NAME
+    MUIA_CManager_Prefs -- [..G.], struct CMPrefs *
+
+   FUNCTION
+    Use it to get the object preferences.
+    Note that they are READ ONLY!
+
+CManager.mcc/MUIA_CManager_ButtonsBar
+
+   NAME
+    MUIA_CManager_ButtonsBar -- [..G.], Object *
+
+   FUNCTION
+    Get the buttons bar object. Be prepared to get a NULL.
+
+    Only needed in the drag methods of a CManager.mcc
+    subclass. F.e.:
+
+    ULONG mDragQuery(struct IClass *cl,Object *obj,struct MUIP_DragDrop *msg)
+    {
+        Object *sb = NULL;
+
+        get(obj,MUIA_CManager_ButtonsBar,&sb);
+        if (msg->obj==sb) return DoSuperMethodA(cl,obj,(Msg)msg);
+        ...
+    }
+
+    ULONG mDragDrop(struct IClass *cl,Object *obj,struct MUIP_DragDrop *msg)
+    {
+        Object *sb = NULL;
+
+        get(obj,MUIA_CManager_ButtonsBar,&sb);
+        if (msg->obj==sb) return DoSuperMethodA(cl,obj,(Msg)msg);
+        ...
+    }
+
+CManager.mcc/MUIA_CManager_TreeObject
+
+   NAME
+    MUIA_CManager_TreeObject -- [..G.], Object *
+
+   FUNCTION
+    PRIVATE!
+
+CManager.mcc.mcc/MUIM_CManager_AddEntry
+
+    NAME
+     MUIM_CManager_AddEntry
+
+    SYNOPSIS
+     DoMethod(obj,MUIM_CManager_AddEntry,struct CMUser *entry,ULONG flags);
+
+     Add an entry to the CMData.
+
+     The entry is added to the current group if
+     MUIV_CManager_AddEntry_CurrentGroup is specified.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_Cleanup
+
+    NAME
+     MUIM_CManager_Cleanup
+
+    SYNOPSIS
+     DoMethod(obj,MUIM_CManager_Cleanup);
+
+     Closes all the CManager windows currently opened.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_DoubleClick
+
+    NAME
+     MUIM_CManager_DoubleClick
+
+    SYNOPSIS
+     DoMethod(DoubleClickObject,MUIM_CManager_DoubleClick,struct CMUser *entry);
+
+     It is not a CManager method, but is is invoked on the object
+     specified in MUIA_CManager_DoubleClickObject any time the
+     user double-clicks on an entry.
+
+    RESULT
+     none
+
+    SEE
+     MUIA_CManager_DoubleClickObject
+
+CManager.mcc.mcc/MUIM_CManager_EditSelected
+
+    NAME
+     MUIM_CManager_EditSelected
+
+    SYNOPSIS
+     DoMethod(obj,MUIM_CManager_EditSelected);
+
+     Opens the edit windows for the selected entries.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_Export
+
+    NAME
+     MUIM_CManager_Export
+
+    SYNOPSIS
+     DoMethod(obj,MUIM_CManager_Export,ULONG Type,STRPTR File,ULONG Flags);
+
+     Exports the current data to a file.
+
+     Type is one of:
+
+     - MUIV_CManager_Export_HTML_URLs
+       Exports Users URLs as HTML
+
+     - MUIV_CManager_Export_HTML_WWW
+       Exports WWW sites URLs as HTML
+
+     - MUIV_CManager_Export_HTML_FTP
+       Exports FTP sites URLs as HTML
+
+     - MUIV_CManager_Export_CSV_Users
+       Exports Users in CSV format
+
+     - MUIV_CManager_Export_CSVFullOE_Users
+       Exports Users in CSV format so that Outlook Express
+       may import it
+
+     - MUIV_CManager_Export_YAM,
+       Exports Users in YAM address book format
+
+     - MUIV_CManager_Export_AWeb,
+       Exports Users in AWeb hotlist format
+
+     - MUIV_CManager_Export_IBrowse,
+       Exports Users in IBrowser hotlist format
+
+     - MUIV_CManager_Export_Netscape
+       Exports Users so that Internet Explorer may
+       import it as a HTML file
+
+     File is the file to write.
+
+     Flags is a combination of:
+
+     - MUIV_CManager_Export_NoHead
+       Do not write HTML head for HTML format Type.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_Import
+
+    NAME
+     MUIM_CManager_Import
+
+    SYNOPSIS
+     DoMethod(obj,MUIM_CManager_Import,ULONG Type,STRPTR File,ULONG Flags);
+
+     Import datas from a file.
+
+     Type is one of:
+     - MUIV_CManager_Import_Voyager
+     - MUIV_CManager_Import_IB
+     - MUIV_CManager_Import_AWeb
+     - MUIV_CManager_Import_Netscape
+     - MUIV_CManager_Import_Users_CSV
+     - MUIV_CManager_Import_Users_CSVFullOE
+     - MUIV_CManager_Import_AmFTP
+     - MUIV_CManager_Import_THOR
+     - MUIV_CManager_Import_MD
+     - MUIV_CManager_Import_YAM
+     - MUIV_CManager_Import_PINT
+     - MUIV_CManager_Import_GoodNews
+     - MUIV_CManager_Import_STRICQ
+     - MUIV_CManager_Import_OldSTFax
+     - MUIV_CManager_Import_STFax
+     - MUIV_CManager_Import_AmIRC
+     - MUIV_CManager_Import_DOpusFTP
+     - MUIV_CManager_Import_DFA
+
+     File is the file to read.
+
+     Flags is a combination of:
+
+     - MUIV_CManager_Import_Filter
+       Avoid duplicate entries.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_LoadData
+
+    NAME
+     MUIM_CManager_LoadData
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_LoadData,STRPTR User,STRPTR Path);
+
+     Load CMData in the CM object. Note that you must invoke this
+     method to load something in a CManager.mcc object.
+
+     If User is specified, that User is logged an its data are
+     opened.
+
+     If User is not specified, Path is used.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_Login
+
+    NAME
+     MUIM_CManager_Login
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_Login,STRPTR User);
+
+     Login User in Genesis and opens its data.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_LoginWindow
+
+    NAME
+     MUIM_CManager_LoginWindow
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_LoginWindow);
+
+     Opens the login window.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_PrefsWindow
+
+    NAME
+     MUIM_CManager_PrefsWindow
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_PrefsWindow,ULONG page);
+
+     Opens the preferences window and go to page.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_Reload
+
+    NAME
+     MUIM_CManager_Reload
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_Reload);
+
+     Reload data.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_SaveData
+
+    NAME
+     MUIM_CManager_SaveData
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_SaveData,STRPTR Path);
+
+     Saves the current data.
+
+     Path may be NULL to save data to the current data path.
+
+    RESULT
+     none
+
+CManager.mcc.mcc/MUIM_CManager_Search
+
+    NAME
+     MUIM_CManager_Search
+
+    SYNOPSIS
+     DoMethod(MUIM_CManager_Search);
+
+     Open the search window.
+
+    RESULT
+     none

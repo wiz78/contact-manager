@@ -1,0 +1,39 @@
+# Make file for CMUrlAdd
+
+TARGET = CMUrlAdd-68k
+
+# Compiler
+C_COMPILER = sc
+C_COMPILER_OPTS = NOSTACKCHECK STRINGMERGE NOCHECKABORT COMMENTNEST\
+IDentifierLENgth=128 IGNORE=315 IGNORE=317 INCLUDEDIR=/include\
+OPTIMIZE OPTIMIZERINLINELOCAL OPTIMIZERSCHEDULER OPTIMIZERTIME
+
+# Assembler
+ASSEMBLER = a68k
+ASSEMBLER_OPTS = -iainc:
+
+# Linker
+LINKER = slink
+LINKER_OPTS = NOICONS SC SD ND
+
+# Objects
+OBJECTS = CMUrlAdd.o
+
+# Libs
+LIBS = LIB:amiga.lib LIB:sc.lib LIB:debug.lib
+
+# Built module
+$(TARGET): $(OBJECTS) $(LIBS)
+         $(LINKER) <with <
+FROM LIB:c.o $(OBJECTS) TO $(TARGET) LIB $(LIBS) $(LINKER_OPTS)
+<
+
+# Rules
+.c.o:
+        $(C_COMPILER) $(C_COMPILER_OPTS) $*.c
+
+.asm.o:
+        $(ASSEMBLER) $(ASSEMBLER_OPTS) $*.asm
+
+# Dependences
+CMUrlAdd.o: CMUrlAdd.c CMUrlAdd_rev.h

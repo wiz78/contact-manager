@@ -1,0 +1,2125 @@
+## version $VER: CManager.catalog 33.7 (8.6.2005)
+## codeset 0
+## language italiano
+;
+; CATCOMP /CManager.cd CManager.ct NOOPTIM CATALOG LOCALE:Catalogs/Italiano/CManager.catalog
+;
+Msg_GetDBDir
+Scegli la directory per i dati di CM
+;
+Msg_NOMUINoDirWarningMsg
+Attenzione! Contact Manager non funziona\n\
+correttamente se non scegli una directory\n\
+per i suoi dati.\n\
+Vuoi sceglierla ora?
+;
+Msg_NOMUINoDirWarningGads
+Sì|No
+;
+MSG_ErrReqTitle
+Errore Contact Manager
+;
+MSG_NOMUIErrReqGadget
+OK
+;
+Msg_Error_NoMem
+Non c'è abbastanza memoria disponibile
+;
+Msg_Error_NoApp
+Grave errore Contact Manager:\n\
+- non c'è abbastanza memoria disponibile\n\
+- qualche risorsa non è disponibile\n\
+\n\
+Contact Manager richiede:\n\
+- AmigaOS 3.1+\n\
+- MUI 19+\n\
+- CManager.library 25+\n\
+- codesets.library 2+\n\
+- vapor_toolkit.library 15+\n\
+- Calendar.mcc 15+\n\
+- CManager.mcc 24+\n\
+- NList.mcc 20+\n\
+- NListtree.mcc 18+\n\
+- NListview.mcc 19+\n\
+- Popplaceholder.mcc 15+\n\
+- Textinput.mcc 29+\n\
+- TheBarVirt.mcc 11+\n\
+- TheButton.mcc 11+\n\
+- Urltext.mcc 18+\n\
+\n\
+Contact Manager usa:\n\
+- genesis.library 2+\n\
+- openurl.library 4+\n\
+- popupmenu.library 10+\n\
+- BWin.mcc 20+\n\
+- MiniMailer.mcc
+;
+Msg_Error_NoWin
+Impossibile aprire la finestra
+;
+Msg_Error_CantLogin
+Tentativo di login user Genesis fallito.
+;
+Msg_App_Copyright
+Copyright 1998-2000 Simone Tellini\n\
+Copyright 2000-2005 Alfonso Ranieri
+;
+Msg_App_Description
+Gestore globale di URL
+;
+Msg_Menu_Project
+Progetto
+;
+Msg_Menu_About
+?\0Informazioni...
+;
+Msg_Menu_AboutMUI
+!\0Informazioni MUI...
+;
+Msg_Menu_Hide
+H\0Nascondi
+;
+Msg_Menu_Quit
+Q\0Esci
+;
+Msg_Menu_SaveAndQuit
+W\0Salva ed esci
+;
+Msg_Menu_ForceQuit
+Z\0Uscita rapida
+;
+Msg_Menu_Database
+Dati
+;
+Msg_Menu_User
+U\0Cambia utente...
+;
+Msg_Menu_Open
+O\0Apri...
+;
+Msg_Menu_Save
+S\0Salva
+;
+Msg_Menu_SaveAs
+A\0Salva come...
+;
+Msg_Menu_LastSaved
+L\0Ultimi dati salvati
+;
+Msg_Menu_Add
+N\0Aggiungi...
+;
+Msg_Menu_Clone
+C\0Copia
+;
+Msg_Menu_Edit
+B\0Modifica...
+;
+Msg_Menu_Remove
+R\0Rimuovi
+;
+Msg_Menu_SelectAll
++\0Seleziona tutto
+;
+Msg_Menu_SelectNone
+-\0Leva selezione
+;
+Msg_Menu_SelectToggle
+\\\0Scambia selezione
+;
+Msg_Menu_Search
+F\0Cerca...
+;
+Msg_Menu_ScanHotlists
+I\0Verifica hotlist
+;
+Msg_Menu_Import
+Importa
+;
+Msg_Menu_ImportYAM
+Rubrica di YAM...
+;
+Msg_Menu_ImportMD2
+Rubrica di Microdot II...
+;
+Msg_Menu_ImportSTRICQ
+Utenti di STRICQ...
+;
+Msg_Menu_ImportDFA
+Indirizzi di DFA...
+;
+Msg_Menu_ImportSTFax
+Rubrica di STFax...
+;
+Msg_Menu_ImportPINT
+Indirizzi UMS - PINT...
+;
+Msg_Menu_ImportGoodNews
+Indirizi UMS - GoodNews...
+;
+Msg_Menu_ImportCSV
+Utenti in formato CSV...
+;
+Msg_Menu_ImportCSVFullOE
+Utenti in formato CSV OE...
+;
+Msg_Menu_ImportThor
+Rubrica di Thor...
+;
+Msg_Menu_ImportAWeb
+Hotlist di AWeb...
+;
+Msg_Menu_ImportV
+Hotlist di Voyager...
+;
+Msg_Menu_ImportIB
+Hotlist di IBrowse...
+;
+Msg_Menu_ImportAmFTP
+Siti di AmFTP...
+;
+Msg_Menu_ImportDOpus
+Siti FTP di DOpus...
+;
+Msg_Menu_ImportAmIRC
+Server di AmIRC...
+;
+Msg_Menu_ImportNetscape
+Hotlist di Netscape...
+;
+Msg_Menu_Export
+Esporta
+;
+Msg_Menu_ExportCSV
+Utenti in formato CSV...
+;
+Msg_Menu_ExportCSVFullOE
+Utenti in formato CSV OE...
+;
+Msg_Menu_ExportURLHtml
+URL in formato HTML...
+;
+Msg_Menu_ExportWWWHtml
+Siti WWW in formato HTML...
+;
+Msg_Menu_ExportFTPHtml
+Siti FTP in formato HTML...
+;
+Msg_Menu_ExportYAM
+Utenti come rubrica di YAM...
+;
+Msg_Menu_ExportAWeb
+Siti WWW come hotlist di AWeb...
+;
+Msg_Menu_ExportIBrowse
+Siti WWW come hotlist di IBrowse...
+;
+Msg_Menu_ExportNetscape
+Siti WWW come hotlist di Netscape...
+;
+Msg_Menu_Settings
+Opzioni
+;
+Msg_Menu_EditPrefs
+G\0Modifica...
+;
+Msg_Menu_MUI
+M\0MUI...
+;
+Msg_Menu_SavePrefs
+J\0Salva
+;
+Msg_Menu_LastSavedPrefs
+D\0Ultimi valori salvati
+;
+Msg_Menu_NoBar
+1\0Nascondi bottoni
+;
+Msg_Menu_NoGroups
+K\0Nascondi gruppi
+;
+Msg_Menu_NoQuick
+2\0Nascondi voci rapide
+;
+Msg_Menu_NoGroupsCtrl
+Nascondi controllo gruppi
+;
+Msg_Menu_NoCard
+3\0Nascondi cartolina
+;
+Msg_Menu_ImportSimpleMail
+Rubrica di SimpleMail...
+;
+Msg_Menu_ExportSimpleMail
+Utenti come rubrica di SimpleMail...
+;
+Msg_Menu_ImportATC
+Siti FTP di ATC...
+; ATC FTP sites...
+;
+Msg_Menu_ExportATC
+Siti FTP come profili ATC...
+; FTP sites as ATC profiles...
+;
+Msg_Req_Title
+Contact Manager
+;
+Msg_Req_HotChangedMsg
+La hotlist "%s" è stata modificata.\n\
+Voi importarla di nuovo?
+;
+Msg_Req_HotChangedGads
+*_Sì|_No
+;
+Msg_Req_NotSavedMsg
+Salvo le modifiche ai dati?
+;
+Msg_Req_NotSavedGads
+*_Sì|_No|_Annulla
+;
+Msg_Req_ChangedMsg
+Un'altra applicazione ha modificato i dati.\n\
+Li ricarico?
+;
+Msg_Req_ChangedGads
+*_Sì|_No
+;
+Msg_Req_Asl
+Ci sono ancora requester asl aperti.\n\
+Chiudili.
+;
+Msg_Req_AslGads
+*_OK
+;
+Msg_Req_DelWarningOne
+Confermi la cancellazione\n\
+della voce selezionata?
+;
+Msg_Req_DelWarningMany
+Confermi la cancellazione\n\
+delle %ld voci selezionate?
+;
+Msg_Req_DelWarningGads
+*_Sì|_No
+;
+Msg_Req_GroupDelWarningOne
+Confermi la cancellazione\n\
+del gruppo selezionato?
+;
+Msg_Req_GroupDelWarningMany
+Confermi la cancellazione\n\
+dei %ld gruppi selezionati?
+;
+Msg_Req_GroupDelWarningGads
+*_Sì|_No
+;
+Msg_Win_Title
+Contact Manager (%s)
+;
+Msg_Gad_Add
+_Aggiungi
+;
+Msg_Gad_AddHelp
+Aggiunge una nuova voce.
+;
+Msg_Gad_Clone
+_Copia
+;
+Msg_Gad_CloneHelp
+Copia le voci selezionate.
+;
+Msg_Gad_Edit
+Mo_difica
+;
+Msg_Gad_EditHelp
+Modifica le voci selezionate.
+;
+Msg_Gad_Remove
+R_imuovi
+;
+Msg_Gad_RemoveHelp
+Rimuove le voci selezionate.
+;
+Msg_Gad_Search
+Ce_rca
+;
+Msg_Gad_SearchHelp
+Apre la finestra di ricerca.
+;
+Msg_Gad_Save
+Sal_va
+;
+Msg_Gad_SaveHelp
+Salva i dati.
+;
+Msg_Gad_Prefs
+_Pref
+;
+Msg_Gad_PrefsHelp
+Apre la finestra preferenze.
+;
+Msg_Gad_Login
+_Utente
+;
+Msg_Gad_LoginHelp
+Apre la finestra utenti.
+;
+Msg_Gad_GroupName
+Nome
+;
+Msg_Gad_GroupNameHelp
+Cambia il nome del gruppo attivo.
+;
+Msg_Gad_AddGroup
+A_gg
+;
+Msg_Gad_AddGroupHelp
+Aggiunge un gruppo.
+;
+Msg_Gad_RemoveGroup
+Ri_m
+;
+Msg_Gad_RemoveGroupHelp
+Rimuove il gruppo selezionato.
+;
+Msg_Gad_GroupUpHelp
+Muove il gruppo attivo in su.
+;
+Msg_Gad_GroupDownHelp
+Muove il gruppo attivo in giu.
+;
+Msg_Groups_Menu_Title
+Gruppi
+;
+Msg_Groups_Menu_OpenThis
+Apri questa
+;
+Msg_Groups_Menu_OpenAll
+Apri tutti
+;
+Msg_Groups_Menu_CloseThis
+Chiudi questa
+;
+Msg_Groups_Menu_CloseAll
+Chiudi tutti
+;
+Msg_Groups_Menu_Sort
+Ordina
+;
+Msg_Gad_Locate
+_Trova
+;
+Msg_Gad_LocateHelp
+Trova una voce nel gruppo corrente.
+;
+Msg_Entries
+Voci:%ld
+;
+Msg_Gad_Sort
+Ordina
+;
+Msg_Gad_SortHelp
+Ordina le voci.
+;
+Msg_Users
+Utenti
+;
+Msg_WWW
+Siti WWW
+;
+Msg_FTP
+Siti FTP
+;
+Msg_Chat
+Chat
+;
+Msg_Telnet
+Telnet
+;
+Msg_Title_Name
+Nome
+;
+Msg_Title_LastName
+Cognome
+;
+Msg_Title_EMail
+EMail
+;
+Msg_Title_Comment
+Commento
+;
+Msg_Title_Alias
+Alias
+;
+Msg_Title_Birthday
+Compleanno
+;
+Msg_Title_Anniversary
+Anniversario
+;
+Msg_Title_Country
+Nazione
+;
+Msg_Title_City
+Città
+;
+Msg_Title_Phone
+Telefono abitazione
+;
+Msg_Title_Mobile
+Cellulare
+;
+Msg_Title_Fax
+Fax personale
+;
+Msg_Title_WWW
+Home page
+;
+Msg_Title_Company
+Società
+;
+Msg_Title_BPhone
+Telefono lavoro
+;
+Msg_Title_BMobile
+Cellulare lavoro
+;
+Msg_Title_BFax
+Fax lavoro
+;
+Msg_Title_Site
+Sito
+;
+Msg_Title_LastVisited
+Ultima visita
+;
+Msg_Title_LastModified
+Ultima modifica
+;
+Msg_Title_Channel
+Canale
+;
+Msg_Title_Server
+Server
+;
+Msg_Title_Host
+Host
+;
+Msg_Title_Port
+Porta
+;
+Msg_Never
+Mai
+;
+Msg_Quick_UserFirst
+_Nome
+;
+Msg_Quick_UserLast
+C_ognome
+;
+Msg_Quick_UserEMail
+EMai_l
+;
+Msg_Quick_WWWName
+_Nome
+;
+Msg_Quick_WWWHost
+_Sito
+;
+Msg_Quick_FTPName
+_Nome
+;
+Msg_Quick_FTPHost
+_Sito
+;
+Msg_Quick_ChatChannel
+Ca_nale
+;
+Msg_Quick_ChatServer
+_Server
+;
+Msg_Quick_TelnetHost
+_Host
+;
+Msg_Quick_TelnetPort
+P_orta
+;
+Msg_Quick_TelnetLogin
+_Login
+;
+Msg_Quick_TelnetPass
+Pa_ssword
+;
+Msg_SearchWin_Title
+Cerca
+;
+Msg_SearchWin_Pattern
+Chia_ve
+;
+Msg_SearchWin_PatternHelp
+La stringa da cercare.
+;
+Msg_SearchWin_SearchInTitle
+Cerca in
+;
+Msg_SearchWin_Users
+_Utenti
+;
+Msg_SearchWin_UsersHelp
+Se impostato, cerca tra gli utenti.
+;
+Msg_SearchWin_WWW
+Siti _WWW
+;
+Msg_SearchWin_WWWHelp
+Se impostato, cerca tra i siti WWW.
+;
+Msg_SearchWin_FTP
+Siti _FTP
+;
+Msg_SearchWin_FTPHelp
+Se impostato, cerca tra i siti FTP.
+;
+Msg_SearchWin_Chat
+C_hat
+;
+Msg_SearchWin_ChatHelp
+Se impostato, cerca tra le Chat.
+;
+Msg_SearchWin_Telnet
+T_elnet
+;
+Msg_SearchWin_TelnetHelp
+Se impostato, cerca tra gli host telnet.
+;
+Msg_SearchWin_OptionsTitle
+Generale
+;
+Msg_SearchWin_Comment
+I_ncludi commenti
+;
+Msg_SearchWin_CommentHelp
+Se impostato, cerca anche tra i commenti.
+;
+Msg_SearchWin_Case
+_Maiuscole/Minuscole
+;
+Msg_SearchWin_CaseHelp
+Se impostato, c'è differenza tra lettere\n\
+maiuscole e le lettere minuscole.
+;
+Msg_SearchWin_Wildcards
+Patte_rn AmigaDOS
+;
+Msg_SearchWin_WildcardsHelp
+Se impostato, la chiave di ricerca\n\
+è considerata una pattern AmigaDOS.
+;
+Msg_SearchWin_Search
+_Cerca
+;
+Msg_SearchWin_SearchHelp
+Cerca l'occorrenza successiva.
+;
+Msg_SearchWin_First
+_Primo
+;
+Msg_SearchWin_FirstHelp
+Ricomincia a cercare dall'inizio.
+;
+Msg_SearchWin_Previous
+_Sopra
+;
+Msg_SearchWin_PreviousHelp
+Cerca l'occorrenza precedente.
+;
+Msg_SearchWin_Cancel
+_Annulla
+;
+Msg_SearchWin_CancelHelp
+Esce dalla finestra di ricerca.
+;
+Msg_SearchWin_Searching
+Sto cercando...
+;
+Msg_SearchWin_Welcome
+Cerca nei dati.
+;
+Msg_SearchWin_Found
+Chiave trovata in %s.
+;
+Msg_SearchWin_NotFound
+Chiave non trovata.
+;
+Msg_UserWin_Title
+Cambia utente
+;
+Msg_UserWin_User
+_Utente
+;
+Msg_UserWin_UserHelp
+Cambia l'utente corrente di Contact Manager.
+;
+Msg_PrefsWin_Title
+Preferenze Contact Manager
+;
+Msg_PrefsWin_TitleSettings
+Generale
+;
+Msg_PrefsWin_TitleScripts
+Macro
+;
+Msg_PrefsWin_TitleHotlists
+Hotlist
+;
+Msg_PrefsWin_TitleDialer
+Telefono
+;
+Msg_PrefsWin_Save
+_Salva
+;
+Msg_PrefsWin_SaveHelp
+Salva le preferenze ed esce.
+;
+Msg_PrefsWin_Use
+_Usa
+;
+Msg_PrefsWin_UseHelp
+Applica le preferenze ed esce.
+;
+Msg_PrefsWin_Apply
+A_pplica
+;
+Msg_PrefsWin_ApplyHelp
+Applica le preferenze senza uscire.
+;
+Msg_PrefsWin_Cancel
+_Annulla
+;
+Msg_PrefsWin_CancelHelp
+Esce senza applicare nè salvare le preferenze.
+;
+Msg_PrefsWin_Settings_Locale
+Località
+;
+Msg_PrefsWin_Settings_Country
+_Nazione
+;
+Msg_PrefsWin_Settings_CountryHelp
+Il nome della nazione in cui vivi.
+;
+Msg_PrefsWin_Settings_CountryCode
+P_refisso
+;
+Msg_PrefsWin_Settings_CountryCodeHelp
+Il prefisso internazionale\n\
+della nazione in cui vivi.
+;
+Msg_PrefsWin_Settings_GetFromLocale
+_Ottieni dal sistema
+;
+Msg_PrefsWin_Settings_GetFromLocaleHelp
+Prova ad ottenere le informazioni\n\
+sulla località dal sistema.
+;
+Msg_PrefsWin_Settings_Options
+Opzioni
+;
+Msg_PrefsWin_Settings_DelWarning
+_Chiedi prima di cancellare
+;
+Msg_PrefsWin_Settings_DelWarningHelp
+Chiedi conferma prima di cancellare\n\
+un numero di voci maggiore di questo.
+;
+Msg_PrefsWin_Settings_DoubleClick
+A_l doppio click
+;
+Msg_PrefsWin_Settings_DoubleClickHelp
+Azione da eseguire quando si esegue\n\
+un doppio click su un sito WWW o FTP.
+;
+Msg_PrefsWin_Settings_DCEdit
+Modifica voce
+;
+Msg_PrefsWin_Settings_DCScript
+Lancia script
+;
+Msg_PrefsWin_Settings_DCScriptQuit
+Lancia script ed esci
+;
+Msg_PrefsWin_Settings_DCScriptHide
+Lancia script ed iconifica
+;
+Msg_PrefsWin_Settings_SilentScan
+Rileggi le _hotlist senza conferma
+;
+Msg_PrefsWin_Settings_SilentScanHelp
+Se impostato, Contact Manager importa le\n\
+hotlist modificate senza chiedere conferma.
+;
+Msg_PrefsWin_Settings_UseOpenURL
+Usa _OpenURL
+;
+Msg_PrefsWin_Settings_UseOpenURLHelp
+Se impostato, Contact Manager\n\
+usa OpenURL, se installata.
+;
+Msg_PrefsWin_Settings_BoldSections
+Se_zioni in grassetto
+;
+Msg_PrefsWin_Settings_BoldSectionsHelp
+Se impostato, i nomi delle sezioni\n\
+sono resi in grassetto.
+;
+Msg_PrefsWin_Settings_BoldTitles
+Titoli lista voci in _grassetto
+;
+Msg_PrefsWin_Settings_BoldTitlesHelp
+Se impostato, i titoli della lista\n\
+voci sono resi in grassetto.
+;
+Msg_PrefsWin_Settings_AutoReload
+_Rileggi i dati se modificati
+;
+Msg_PrefsWin_Settings_AutoReloadHelp
+Se impostato, Contact Manager rilegge i dati,\n\
+quando un'altra applicazione li modifica,\n\
+senza chiedere conferma.
+;
+Msg_PrefsWin_Settings_SaveOnExit
+Sal_va in uscita
+;
+Msg_PrefsWin_Settings_SaveOnExitHelp
+Se impostato, Contact Manager, all'uscita,\n\
+salva i dati modificati senza chiedere\n\
+conferma.
+;
+Msg_PrefsWin_Settings_SilentExit
+_Esci senza conferma
+;
+Msg_PrefsWin_Settings_SilentExitHelp
+Se impostato, Contact Manager esce senza\n\
+salvare i dati nè chiedere conferma, anche\n\
+se i dati sono stati modificati.
+;
+Msg_PrefsWin_Settings_SaveOnChanges
+Salva a_d ogni modifica
+;
+Msg_PrefsWin_Settings_SaveOnChangesHelp
+Se impostato, Contact Manager\n\
+salva i dati ad ogni modifica.
+;
+Msg_PrefsWin_Settings_NoListBar
+N_iente barre tra le colonne
+;
+Msg_PrefsWin_Settings_NoListBarHelp
+Se impostato, la lista voci non usa\n\
+barre di divisione tra le colonne.
+;
+Msg_PrefsWin_Settings_NtCheckChanges
+_Non controllare modifiche ai dati
+;
+Msg_PrefsWin_Settings_NtCheckChangesHelp
+Se impostato, Contact Manager ignora le\n\
+modifiche ai dati apportate da altre\n\
+applicazioni.
+;
+Msg_PrefsWin_Settings_RightMouseActive
+Mouse destro cam_bia la voce attiva
+;
+Msg_PrefsWin_Settings_RightMouseActiveHelp
+Se impostato, la pressione del bottone\n\
+destro del mouse su una voce di una\n\
+lista rende la voce attiva.
+;
+Msg_PrefsWin_Settings_EditNew
+_Modifica nuove voci
+;
+Msg_PrefsWin_Settings_EditNewHelp
+Se impostato, Contact Manager apre\n\
+la finestra di modifica dati per\n\
+ogni nuova voce.
+;
+Msg_PrefsWin_Settings_ButtonsBar
+TheBar
+;
+Msg_PrefsWin_Settings_BarPosition
+P_osizione
+;
+Msg_PrefsWin_Settings_BarPositionHelp
+Modifica la posizione dei bottoni.
+;
+Msg_PrefsWin_Settings_BarPositionTop
+Sopra
+;
+Msg_PrefsWin_Settings_BarPositionBottom
+Sotto
+;
+Msg_PrefsWin_Settings_BarPositionLeft
+Sinistra
+;
+Msg_PrefsWin_Settings_BarPositionRight
+Destra
+;
+Msg_PrefsWin_Settings_BarPositionInnertTop
+Dentro sopra
+;
+Msg_PrefsWin_Settings_BarPositionInnerBottom
+Dentro sotto
+;
+Msg_PrefsWin_Settings_ViewMode
+Asp_etto
+;
+Msg_PrefsWin_Settings_ViewModeHelp
+Modifica l'aspetto dei bottoni.
+;
+Msg_PrefsWin_Settings_TextGfx
+Immagini e testo
+;
+Msg_PrefsWin_Settings_Gfx
+Immagini
+;
+Msg_PrefsWin_Settings_Text
+Testo
+;
+Msg_PrefsWin_Settings_Borderless
+Se_nza bordi
+;
+Msg_PrefsWin_Settings_BorderlessHelp
+Se impostato, i bottoni sono senza bordo.
+;
+Msg_PrefsWin_Settings_Sunny
+I_lluminati
+;
+Msg_PrefsWin_Settings_SunnyHelp
+Se impostato, i bottoni, normalmente\n\
+in bianco e nero, sono colorati al\n\
+passaggio del mouse.
+;
+Msg_PrefsWin_Settings_Raised
+In_corniciati
+;
+Msg_PrefsWin_Settings_RaisedHelp
+Se impostato, i bottoni, normalmente senza\n\
+bordi, sono incorniciati al passaggio del\n\
+mouse.
+;
+Msg_PrefsWin_Settings_Scaled
+Scala_ti
+;
+Msg_PrefsWin_Settings_ScaledHelp
+Se impostato, i bottoni sono scalati,\n\
+in accordo alle preferenze MUI.
+;
+Msg_PrefsWin_Settings_Underscore
+Tasti c_hiave
+;
+Msg_PrefsWin_Settings_UnderscoreHelp
+Se impostato, i tasti chiave\n\
+dei bottoni sono attivi.
+;
+Msg_PrefsWin_Settings_ButtonsPosition
+Posiz_ione bottoni
+;
+Msg_PrefsWin_Settings_ButtonsPositionHelp
+Modifica la posizione dei bottoni.
+;
+Msg_PrefsWin_Settings_ButtonsPosition_Left
+Sinistra (Sopra)
+;
+Msg_PrefsWin_Settings_ButtonsPosition_Center
+Centro
+;
+Msg_PrefsWin_Settings_ButtonsPosition_Right
+Destra (Sotto)
+;
+Msg_PrefsWin_Settings_LabelPosition
+Posi_zione testo
+;
+Msg_PrefsWin_Settings_LabelPositionHelp
+Modifica la posizione del testo\n\
+in bottoni "Immagine e testo".
+;
+Msg_PrefsWin_Settings_LabelPosition_Bottom
+Sotto
+;
+Msg_PrefsWin_Settings_LabelPosition_Top
+Sopra
+;
+Msg_PrefsWin_Settings_LabelPosition_Right
+Destra
+;
+Msg_PrefsWin_Settings_LabelPosition_Left
+Sinistra
+;
+Msg_PrefsWin_Settings_BarSpacer
+Usa _barra spazio
+;
+Msg_PrefsWin_Settings_BarSpacerHelp
+Se impostato, una barra spazio è\n\
+usata come spazio tra i bottoni.
+;
+Msg_PrefsWin_Settings_Frame
+Co_rnice
+;
+Msg_PrefsWin_Settings_FrameHelp
+Se impostato, una cornice è disegnata\n\
+intorno alla barra dei bottoni.
+;
+Msg_PrefsWin_Settings_DragBar
+_Mobile
+;
+Msg_PrefsWin_Settings_DragBarHelp
+Se impostato, la barra dei bottoni\n\
+può essere trascinata.
+;
+Msg_PrefsWin_Programs_UserScript
+---
+;
+Msg_PrefsWin_Programs_MailerTitle
+Invia EMail
+;
+Msg_PrefsWin_Programs_Mailer
+Script
+;
+Msg_PrefsWin_Programs_MailerHelp
+Lo script da eseguire quando si\n\
+seleziona la voce "Manda EMail".
+;
+Msg_PrefsWin_Programs_MailerScript
+Nome
+;
+Msg_PrefsWin_Programs_MailerScriptHelp
+Percorso completo allo script ARexx.
+;
+Msg_PrefsWin_Programs_MailerPath
+Cliente
+;
+Msg_PrefsWin_Programs_MailerPathHelp
+Il percorso completo ad un'applicazione\n\
+da passare come argomento allo script.
+;
+Msg_PrefsWin_Programs_WWWTitle
+Invia al Browser
+;
+Msg_PrefsWin_Programs_WWW
+Script
+;
+Msg_PrefsWin_Programs_WWWHelp
+Lo script da eseguire quando si\n\
+seleziona la voce "Invia al Browser".
+;
+Msg_PrefsWin_Programs_WWWScript
+Nome
+;
+Msg_PrefsWin_Programs_WWWScriptHelp
+Percorso completo allo script ARexx.
+;
+Msg_PrefsWin_Programs_WWWPath
+Cliente
+;
+Msg_PrefsWin_Programs_WWWPathHelp
+Il percorso completo ad un'applicazione\n\
+da passare come argomento allo script.
+;
+Msg_PrefsWin_Programs_FTPTitle
+Invia a FTP
+;
+Msg_PrefsWin_Programs_FTP
+Script
+;
+Msg_PrefsWin_Programs_FTPHelp
+Lo script da eseguire quando si\n\
+seleziona la voce "Invia a FTP".
+;
+Msg_PrefsWin_Programs_FTPScript
+Nome
+;
+Msg_PrefsWin_Programs_FTPScriptHelp
+Percorso completo allo script ARexx.
+;
+Msg_PrefsWin_Programs_FTPPath
+Cliente
+;
+Msg_PrefsWin_Programs_FTPPathHelp
+Il percorso completo ad un'applicazione\n\
+da passare come argomento allo script.
+;
+Msg_PrefsWin_Programs_FTPLocal
+Locale
+;
+Msg_PrefsWin_Programs_FTPLocalHelp
+Qui puoi definire una directory locale.\n\
+Un cliente FTP può, ad esempio, mostrare\n\
+tale direftory in una finestra.
+;
+Msg_PrefsWin_Programs_FTPLocalUse
+Usa
+;
+Msg_PrefsWin_Programs_FTPLocalUseHelp
+Se impostato, la directory locale è attiva.
+;
+Msg_PrefsWin_Programs_ChatTitle
+Entra nella Chat
+;
+Msg_PrefsWin_Programs_Chat
+Script
+;
+Msg_PrefsWin_Programs_ChatHelp
+Lo script da eseguire quando si\n\
+seleziona la voce "Entra nella Chat".
+;
+Msg_PrefsWin_Programs_ChatScript
+Nome
+;
+Msg_PrefsWin_Programs_ChatScriptHelp
+Percorso completo allo script ARexx.
+;
+Msg_PrefsWin_Programs_ChatPath
+Cliente
+;
+Msg_PrefsWin_Programs_ChatPathHelp
+Il percorso completo ad un'applicazione\n\
+da passare come argomento allo script.
+;
+Msg_PrefsWin_Programs_TelnetTitle
+Invia a Telnet
+;
+Msg_PrefsWin_Programs_Telnet
+Script
+;
+Msg_PrefsWin_Programs_TelnetHelp
+Lo script da eseguire quando si\n\
+seleziona la voce "Invia a Telnet".
+;
+Msg_PrefsWin_Programs_TelnetScript
+Nome
+;
+Msg_PrefsWin_Programs_TelnetScriptHelp
+Percorso completo allo script ARexx.
+;
+Msg_PrefsWin_Programs_TelnetPath
+Cliente
+;
+Msg_PrefsWin_Programs_TelnetPathHelp
+Il percorso completo ad un'applicazione\n\
+da passare come argomento allo script.
+;
+Msg_PrefsWin_Programs_FaxTitle
+Invia Fax
+;
+Msg_PrefsWin_Programs_Fax
+Script
+;
+Msg_PrefsWin_Programs_FaxHelp
+Lo script da eseguire quando si\n\
+seleziona la voce "Invia Fax".
+;
+Msg_PrefsWin_Programs_FaxScript
+Nome
+;
+Msg_PrefsWin_Programs_FaxScriptHelp
+Percorso completo allo script ARexx.
+;
+Msg_PrefsWin_Programs_FaxPath
+Cliente
+;
+Msg_PrefsWin_Programs_FaxPathHelp
+Il percorso completo ad un'applicazione\n\
+da passare come argomento allo script.
+;
+Msg_PrefsWin_Programs_SavedProgTitle
+Salvataggio
+;
+Msg_PrefsWin_Programs_SavedProg
+Applicazione
+;
+Msg_PrefsWin_Programs_SavedProgHelp
+Applicazione da eseguire ogni\n\
+volta che i dati sono salvati.
+;
+Msg_PrefsWin_Programs_SavedProgUse
+Usa
+;
+Msg_PrefsWin_Programs_SavedProgUseHelp
+Se impostato, l'applicazione è eseguita.
+;
+Msg_PrefsWin_Programs_SavedProgPopData
+nome file dati
+;
+Msg_PrefsWin_Dialer_Dialer
+_Composizione
+;
+Msg_PrefsWin_Dialer_DialerHelp
+Scegli se usare il metodo di composizione\n\
+interno od un'applicazione esterna per\n\
+comporre numeri telefonici.
+;
+Msg_PrefsWin_Dialer_DExternal
+Applicazione esterna
+;
+Msg_PrefsWin_Dialer_DInternal
+Metodo interno
+;
+Msg_PrefsWin_Dialer_Device
+_Device
+;
+Msg_PrefsWin_Dialer_DeviceHelp
+Il device da usare per comporre\n\
+numeri telefonici.
+;
+Msg_PrefsWin_Dialer_Unit
+U_nità
+;
+Msg_PrefsWin_Dialer_UnitHelp
+L'unità per il device.
+;
+Msg_PrefsWin_Dialer_Shared
+C_ondiviso
+;
+Msg_PrefsWin_Dialer_SharedHelp
+Se impostato, il device è aperto\n\
+in modalità condivisa.
+;
+Msg_PrefsWin_Dialer_ModemType
+_Modem
+;
+Msg_PrefsWin_Dialer_ModemTypeHelp
+Il modem in uso.
+;
+Msg_PrefsWin_Dialer_ModemInit
+Ini_t
+;
+Msg_PrefsWin_Dialer_ModemInitHelp
+Comando per l'inizializzazione del modem.
+;
+Msg_PrefsWin_Dialer_DialPrefix
+Componi _inizio
+;
+Msg_PrefsWin_Dialer_DialPrefixHelp
+Prefisso per la composizione di numeri.
+;
+Msg_PrefsWin_Dialer_DialSuffix
+Componi _fine
+;
+Msg_PrefsWin_Dialer_DialSuffixHelp
+Suffisso per la composizione di numeri.
+;
+Msg_PrefsWin_Dialer_RedialDelay
+Att_esa
+;
+Msg_PrefsWin_Dialer_RedialDelayHelp
+Il numero di secondi tra due\n\
+tentativi di composizione.
+;
+Msg_PrefsWin_Dialer_RedialAttempts
+Tentati_vi
+;
+Msg_PrefsWin_Dialer_RedialAttemptsHelp
+Il numero dei tentativi.
+;
+Msg_PrefsWin_Dialer_Log
+Logga
+;
+Msg_PrefsWin_Dialer_LogHelp
+Logga le operazioni di composizione.
+;
+Msg_PrefsWin_Dialer_Program
+P_rogramma
+;
+Msg_PrefsWin_Dialer_ProgramHelp
+L'applicaizone esterna da eseguire\n\
+per comporre numeri telefonici.
+;
+Msg_PrefsWin_Dialer_ProgramPopNumber
+numero
+;
+Msg_PrefsWin_Hotlists_V
+_Voyager
+;
+Msg_PrefsWin_Hotlists_VHelp
+Il percorso completo alla hotlist di Voyager.
+;
+Msg_PrefsWin_Hotlists_IB
+_IBrowse
+;
+Msg_PrefsWin_Hotlists_IBHelp
+Il percorso completo alla hotlist di IBrowse.
+;
+Msg_PrefsWin_Hotlists_AWeb
+A_Web
+;
+Msg_PrefsWin_Hotlists_AWebHelp
+Il percorso completo alla hotlist di AWeb.
+;
+Msg_PrefsWin_Hotlists_MD2
+_Microdot II
+;
+Msg_PrefsWin_Hotlists_MD2Help
+Il percorso completo alla rubrica di Microdot II.
+;
+Msg_PrefsWin_Hotlists_YAM
+_YAM
+;
+Msg_PrefsWin_Hotlists_YAMHelp
+Il percorso completo alla rubrica di YAM.
+;
+Msg_PrefsWin_Hotlists_STRICQ
+S_TRICQ
+;
+Msg_PrefsWin_Hotlists_STRICQHelp
+Il percorso completo alla rubrica di STRICQ.
+;
+Msg_PrefsWin_Hotlists_GoodNews
+UMS - _GoodNews
+;
+Msg_PrefsWin_Hotlists_GoodNewsHelp
+Il percorso completo alla rubrica di GoodNews.
+;
+Msg_PrefsWin_Hotlists_PINT
+UMS - PI_NT
+;
+Msg_PrefsWin_Hotlists_PINTHelp
+Il percorso completo alla rubrica di PINT.
+;
+Msg_PrefsWin_Hotlists_DFA
+_DFA
+;
+Msg_PrefsWin_Hotlists_DFAHelp
+Il percorso completo alla rubrica di DFA.
+;
+Msg_PrefsWin_Hotlists_STFax
+STFa_x
+;
+Msg_PrefsWin_Hotlists_STFaxHelp
+Il percorso completo alla rubrica di STFax.
+;
+Msg_PrefsWin_Hotlists_Thor
+Thor
+;
+Msg_PrefsWin_Hotlists_ThorHelp
+Il percorso completo alla rubrica di Thor.
+;
+Msg_PrefsWin_Hotlists_AmFTP
+Am_FTP
+;
+Msg_PrefsWin_Hotlists_AmFTPHelp
+Il percorso completo alla rubrica di AmFTP.
+;
+Msg_PrefsWin_Hotlists_DOpus
+D_Opus FTP
+;
+Msg_PrefsWin_Hotlists_DOpusHelp
+Il percorso completo alla rubrica di DOpus.
+;
+Msg_PrefsWin_Hotlists_AmIRC
+AmI_RC
+;
+Msg_PrefsWin_Hotlists_AmIRCHelp
+Il percorso completo al file di\n\
+configurazione di AmIRC.
+;
+Msg_PrefsWin_HotsFill
+Ri_empi
+;
+Msg_PrefsWin_HotsFillHelp
+Cerca di ottenere le hotlist dal sistema.
+;
+Msg_PrefsWin_HotsClear
+_Cancella
+;
+Msg_PrefsWin_HotsClearHelp
+Cancella le hotlist.
+;
+Msg_PrefsWin_Settings_EmptyNodes
+Mostra nodi vuoti come _foglie
+;
+Msg_PrefsWin_Settings_EmptyNodesHelp
+Se impostato, i gruppi vuoti sono\n\
+disegnati come foglie.
+;
+Msg_PrefsWin_Settings_GroupsStatus
+S_tato gruppi
+;
+Msg_PrefsWin_Settings_GroupsStatusHelp
+Lo stato dei gruppi al caricamento.
+;
+Msg_PrefsWin_Settings_GroupsStatusRemember
+Ricorda
+;
+Msg_PrefsWin_Settings_GroupsStatusOpened
+Sempre aperti
+;
+Msg_PrefsWin_Settings_GroupsStatusClosed
+Sempre chiusi
+;
+Msg_PrefsWin_Settings_SectionsImages
+Usa immagini sezioni
+;
+Msg_PrefsWin_Settings_SectionsImagesHelp
+Se impostato, le immagini sezioni sono\n\
+usate.
+;
+Msg_PrefsWin_Settings_GroupsImages
+Usa immagini gruppi
+;
+Msg_PrefsWin_Settings_GroupsImagesHelp
+Se impostato, le immagini gruppi sono\n\
+usate.
+;
+Msg_PrefsWin_Settings_Codesets
+_Caratteri
+;
+Msg_PrefsWin_Settings_CodesetsHelp
+I caratteri da usare.
+;
+Msg_PrefsWin_Hotlists_Netscape
+Firefox
+;
+Msg_PrefsWin_Hotlists_NetscapeHelp
+Il percorso completo alla hotlist di Firefox.
+;
+Msg_PrefsWin_Settings_ManualSort
+Ordinamento manuale
+;
+Msg_PrefsWin_Settings_ManualSortHelp
+Se impostato, Contact Manager lascia\n\
+ordinare le voci manualmente.
+;
+Msg_PrefsWin_TitleCard
+Cartolina
+;
+Msg_PrefsWin_CardBack
+Sf_ondo
+;
+Msg_PrefsWin_CardBackHelp
+Seleziona lo sfondo della cartolina.
+;
+Msg_PrefsWin_CardBackTitle
+Seleziona lo sfondo
+;
+Msg_PrefsWin_TitlesPen
+P_enna titoli
+;
+Msg_PrefsWin_TitlesPenHelp
+Seleziona la penna per i titoli.
+;
+Msg_PrefsWin_TitlesPenTitle
+Seleziona la penna
+;
+Msg_PrefsWin_TitlesBackPen
+Pen_na sfondo titoli
+;
+Msg_PrefsWin_TitlesBackPenHelp
+Seleziona la penna per lo\n\
+sfondo dei titoli.
+;
+Msg_PrefsWin_TitlesBackPenTitle
+Seleziona la penna
+;
+Msg_PrefsWin_URLPen
+Penna U_RL
+;
+Msg_PrefsWin_URLPenHelp
+Seleziona la penna per le URL.
+;
+Msg_PrefsWin_URLPenTitle
+Seleziona la penna.
+;
+Msg_PrefsWin_URLOverPen
+Penna sopra UR_L
+;
+Msg_PrefsWin_URLOverPenHelp
+Seleziona la penna per le URL\n\
+quando il mouse vi è sopra.
+;
+Msg_PrefsWin_URLOverPenTitle
+Seleziona la penna.
+;
+Msg_PrefsWin_CardFont
+Caratteri titolo cartolina
+;
+Msg_PrefsWin_CardFontHelp
+Seleziona i caratteri per il titolo della cartolina.
+;
+Msg_PrefsWin_TitlesFont
+Caratteri titoli
+;
+Msg_PrefsWin_TitlesFontHelp
+Seleziona i caratteri per i titoli.
+;
+Msg_PrefsWin_ShowMiniature
+_Mosta miniatura
+;
+Msg_PrefsWin_ShowMiniatureHelp
+Se impostato, le miniature sono mostrate.
+;
+Msg_PrefsWin_MiniatureSize
+_Dim. miniature
+;
+Msg_PrefsWin_MiniatureSizeHelp
+La dimensione massima delle miniature.
+;
+Msg_PrefsWin_Settings_ClosedGroups
+Gruppi importati chiusi
+;
+Msg_PrefsWin_Settings_ClosedGroupsHelp
+Se impostato, i gruppi importati sono inseriti chiusi.
+;
+Msg_PrefsWin_MiniatureFrame
+Cornice _miniatura
+;
+Msg_PrefsWin_MiniatureFrameHelp
+Seleziona la cornice della miniatura.
+;
+Msg_PrefsWin_MiniatureFrameTitle
+Seleziona la cornice della miniatura
+;
+Msg_PrefsWin_Settings_IgnoreLast
+Ignora ultima visita e modifica
+;
+Msg_PrefsWin_Settings_IgnoreLastHelp
+Se impostato, i campi ultima visita e ultima modifica\n\
+delle sezioni WWW e FTP verranno ignorati.
+;
+Msg_PrefsWin_Hotlists_SimpleMail
+SimpleMail
+;
+Msg_PrefsWin_Hotlists_SimpleMailHelp
+Il percorso completo alla rubrica di SimpleMail.
+;
+Msg_List_Menu_Title
+Lista
+;
+Msg_List_Menu_DefWidthThis
+Larghezza predefinita: colonna
+;
+Msg_List_Menu_DefWidthAll
+Larghezza predefinita: tutte
+;
+Msg_List_Menu_DefOrderThis
+Ordine predefinito: colonna
+;
+Msg_List_Menu_DefOrderAll
+Ordine predefinito: tutte
+;
+Msg_List_Menu_DefSort
+Sort predefinito
+;
+Msg_Text_Menu_Title
+Testo
+;
+Msg_String_Menu_Title
+Stringa
+;
+Msg_String_Menu_DeleteAll
+Cancella tutto
+;
+Msg_String_Menu_Cut
+Taglia
+;
+Msg_String_Menu_Copy
+Copia
+;
+Msg_String_Menu_Paste
+Incolla
+;
+Msg_String_Menu_External
+Editor esterno...
+;
+Msg_String_Menu_Insert
+Inserisci file...
+;
+Msg_String_Menu_WordWrap
+Accapo
+;
+Msg_Bar_Menu_Title
+Bottoni
+;
+Msg_Bar_Menu_ViewMode_TextGfx
+Immagini e testo
+;
+Msg_Bar_Menu_ViewMode_Gfx
+Immagini
+;
+Msg_Bar_Menu_ViewMode_Text
+Testo
+;
+Msg_Bar_Menu_Borderless
+Senza bordi
+;
+Msg_Bar_Menu_Sunny
+Illuminati
+;
+Msg_Bar_Menu_Raised
+Incorniciati
+;
+Msg_Menu_Configure
+Configura
+;
+Msg_Menu_Columns
+Colonne
+;
+Msg_Card_Menu_Hide
+Nascondi
+;
+Msg_Card_Menu_Title
+Cartolina
+;
+Msg_Edit_MenuEdit
+Modifica
+;
+Msg_Edit_MenuCopy
+Copia negli appunti
+;
+Msg_Edit_MenuBrowser
+Invia al Browser
+;
+Msg_Edit_MenuFTP
+Invia a FTP
+;
+Msg_Edit_MenuJoin
+Entra nella Chat
+;
+Msg_Edit_MenuTelnet
+Invia a Telnet
+;
+Msg_Edit_MenuEMail
+Invia EMail
+;
+Msg_Edit_MenuEMailHome
+Abitazione
+;
+Msg_Edit_MenuEMailBusiness
+Lavoro
+;
+Msg_Edit_MenuCall
+Telefona
+;
+Msg_Edit_MenuCallHome
+Abitazione
+;
+Msg_Edit_MenuCallMobile
+Cellulare
+;
+Msg_Edit_MenuCallBusiness
+Lavoro
+;
+Msg_Edit_MenuCallBusinessMobile
+Cellulare lavoro
+;
+Msg_Edit_MenuFax
+Invia Fax
+;
+Msg_Edit_MenuFaxHome
+Abitazione
+;
+Msg_Edit_MenuFaxBusiness
+Lavoro
+;
+Msg_Edit_MenuUser_Title
+User
+;
+Msg_Edit_MenuUserList_Title
+User list
+;
+Msg_Edit_MenuWWW_Title
+WWW
+;
+Msg_Edit_MenuWWWList_Title
+WWW list
+;
+Msg_Edit_MenuFTP_Title
+FTP
+;
+Msg_Edit_MenuFTPList_Title
+FTP list
+;
+Msg_Edit_MenuChat_Title
+Chat
+;
+Msg_Edit_MenuChatList_Title
+Chat list
+;
+Msg_Edit_MenuTelnet_Title
+Telnet
+;
+Msg_Edit_MenuTelnetList_Title
+Telnet list
+;
+Msg_Edit_OK
+_Usa
+;
+Msg_Edit_Cancel
+_Annulla
+;
+Msg_Edit_MenuQuickEMail
+EMail veloce
+;
+Msg_Edit_MenuTitle
+User
+;
+Msg_Edit_UserWinTitle
+Modifica utente
+;
+Msg_Edit_UserMenuTitle
+Azioni utente
+;
+Msg_Edit_UserNameTitle
+Nome
+;
+Msg_Edit_UserHomeTitle
+Abitazione
+;
+Msg_Edit_UserBusiTitle
+Lavoro
+;
+Msg_Edit_UserNoteTitle
+Note
+;
+Msg_Edit_UserImageTitle
+Immagine
+;
+Msg_Edit_UserFirst
+_Nome
+;
+Msg_Edit_UserLast
+C_ognome
+;
+Msg_Edit_UserVisualName
+_Mostra come
+;
+Msg_Edit_UserEMail
+EMai_l
+;
+Msg_Edit_UserEMailAdd
+A_ggiungi
+;
+Msg_Edit_UserEMailRem
+_Cancella
+;
+Msg_Edit_UserEMailUp
+Spos_ta sù
+;
+Msg_Edit_UserEMailDown
+Sposta g_iù
+;
+Msg_Edit_UserAddress
+_Indirizzo
+;
+Msg_Edit_UserCity
+_Città
+;
+Msg_Edit_UserZIP
+CA_P
+;
+Msg_Edit_UserCountry
+Na_zione
+;
+Msg_Edit_UserAlias
+Alia_s
+;
+Msg_Edit_UserPGP
+P_GP
+;
+Msg_Edit_UserPhone
+_Telefono
+;
+Msg_Edit_UserMobile
+C_ellulare
+;
+Msg_Edit_UserFax
+Fa_x
+;
+Msg_Edit_UserICQ
+IC_Q
+;
+Msg_Edit_UserWWW
+_WWW
+;
+Msg_Edit_UserFTP
+_FTP
+;
+Msg_Edit_UserCompany
+_Società
+;
+Msg_Edit_UserJob
+_Qualifica
+;
+Msg_Edit_UserDept
+_Reparto
+;
+Msg_Edit_UserOffice
+U_fficio
+;
+Msg_Edit_UserOffEMail
+EMai_l
+;
+Msg_Edit_UserOffAddress
+_Indirizzo
+;
+Msg_Edit_UserOffCity
+_Città
+;
+Msg_Edit_UserOffZIP
+CA_P
+;
+Msg_Edit_UserOffCountry
+Na_zione
+;
+Msg_Edit_UserOffPhone
+_Telefono
+;
+Msg_Edit_UserOffMobile
+C_ellulare
+;
+Msg_Edit_UserOffFax
+Fa_x
+;
+Msg_Edit_UserImage
+_Immagine
+;
+Msg_Edit_UserImageTransparent
+_Tras
+;
+Msg_Edit_UserSex
+S_esso
+;
+Msg_Edit_UserSex_None
+---
+;
+Msg_Edit_UserSex_Male
+Maschio
+;
+Msg_Edit_UserSex_Female
+Femmina
+;
+Msg_Edit_UserBirthday
+Com_pleanno
+;
+Msg_Edit_UserAnniversary
+Anni_versario
+;
+Msg_Edit_UserGetMap
+_Mappa
+;
+Msg_Edit_WWWWinTitle
+Modifica sito WWW
+;
+Msg_Edit_WWWMenuTitle
+Azioni WWW
+;
+Msg_Edit_WWWName
+_Nome
+;
+Msg_Edit_WWWHost
+_Sito
+;
+Msg_Edit_WWWAlias
+Al_ias
+;
+Msg_Edit_WWWMaster
+_Gestore
+;
+Msg_Edit_WWWEMail
+EMai_l
+;
+Msg_Edit_WWWComment
+_Commento
+;
+Msg_Edit_FTPWinTitle
+Modifica sito FTP
+;
+Msg_Edit_FTPMenuTitle
+Azioni FTP
+;
+Msg_Edit_FTPSettingsTitle
+Opzioni
+;
+Msg_Edit_FTPAdvancedTitle
+Avanzate
+;
+Msg_Edit_FTPName
+_Nome
+;
+Msg_Edit_FTPHost
+_Sito
+;
+Msg_Edit_FTPAlias
+Al_ias
+;
+Msg_Edit_FTPEMail
+_EMail
+;
+Msg_Edit_FTPLocal
+_Locale
+;
+Msg_Edit_FTPLocalUse
+Usa
+;
+Msg_Edit_FTPComment
+_Commento
+;
+Msg_Edit_FTPAdvanced
+A_ttiva le opzioni avanzate
+;
+Msg_Edit_FTPUser
+Ut_ente
+;
+Msg_Edit_FTPPass
+_Password
+;
+Msg_Edit_FTPPort
+Po_rta
+;
+Msg_Edit_FTPRetries
+Te_ntativi
+;
+Msg_Edit_FTPWinType
+_Finestra
+;
+Msg_Edit_FTPWinTypeDual
+Doppia lista
+;
+Msg_Edit_FTPWinTypeSingle
+Lista singola
+;
+Msg_Edit_FTPADT
+A_DT
+;
+Msg_Edit_FTPAnon
+Anon_imo
+;
+Msg_Edit_FTPQuiet
+_Silenzioso
+;
+Msg_Edit_FTPCompression
+Co_mpressione
+;
+Msg_Edit_FTPOutput
+_Output
+;
+Msg_Edit_FTPHidden
+Nas_costi
+;
+Msg_Edit_FTPNOOPs
+In_via NOOP
+;
+Msg_Edit_FTPUseProxy
+Pro_xy
+;
+Msg_Edit_ChatWinTitle
+Modifica Chat
+;
+Msg_Edit_ChatMenuTitle
+Azioni Chat
+;
+Msg_Edit_ChatChannel
+Ca_nale
+;
+Msg_Edit_ChatPass
+_Password
+;
+Msg_Edit_ChatServer
+_Server
+;
+Msg_Edit_ChatNick
+Nic_k
+;
+Msg_Edit_ChatMantainer
+_Gestore
+;
+Msg_Edit_ChatWWW
+_WWW
+;
+Msg_Edit_ChatEMail
+_EMail
+;
+Msg_Edit_ChatComment
+_Commento
+;
+Msg_Edit_TelnetWinTitle
+Modifica sito Telnet
+;
+Msg_Edit_TelnetMenuTitle
+Azioni Telnet
+;
+Msg_Edit_TelnetHost
+_Host
+;
+Msg_Edit_TelnetPort
+P_orta
+;
+Msg_Edit_TelnetSSH
+_SSH
+;
+Msg_Edit_TelnetLogin
+_Login
+;
+Msg_Edit_TelnetPass
+_Password
+;
+Msg_Edit_TelnetEMail
+_EMail
+;
+Msg_Edit_TelnetComment
+_Commento
+;
+Msg_Edit_TelnetAlias
+A_lias
+;
+Msg_Dial_WinTitle
+Componi
+;
+Msg_Dial_Cancel
+_Annulla
+;
+Msg_Dial_Dialling
+Composizione %s...\n\
+(tentativo %ld/%ld)
+;
+Msg_Dial_RetryCancelGads
+*_Riprova|_Annulla
+;
+Msg_Dial_ModemNotResponding
+Nessua risposta dal modem.\n\
+Controlla se è in funzione.
+;
+Msg_Dial_Waiting
+Attendo...(%ld)
+;
+Msg_Dial_NoDevice
+Impossibile aprire l'unità %ld del device %s!
+;
+Msg_MiniMailWin_Title
+EMail veloce
+;
+Msg_About_WinTitle
+Informazioni Contact Manager
+;
+Msg_About_Descr
+Contact Manager è un gestore globale di URL,\n\
+distribuito come prodotto Shareware.
+;
+Msg_About_Info
+Informazioni
+;
+Msg_About_Version
+Versioni:
+;
+Msg_About_Authors
+Autori:
+;
+Msg_About_Support
+Supporto:
+;
+Msg_About_Database
+File dati:
+;
+Msg_About_ThirdParts
+Terze parti
+;
+Msg_About_Translation
+\0
+;
+Msg_About_Translator
+Traduzione italiana di
+;
+Msg_About_TranslatorURL
+Alfonso Ranieri
+;
+Msg_About_OfCourse
+, naturalmente!
+;
+Msg_About_NListtree
+Classe NListtree di
+;
+Msg_About_NList
+Classi NList di
+;
+Msg_About_Popplaceholder
+Classe Popplaceholder di
+;
+Msg_About_Textinput
+Classi Textinput di
+;
+Msg_About_PopupMenu
+popupmenu.library di
+;
+Msg_About_GroupsImages
+Immagini gruppi di
+;
+Msg_About_Lamp
+Classe Lamp di
+;
+Msg_DelWarning_Never
+Mai
+;
+Msg_DelWarning_Always
+Sempre
+;
+Msg_DelWarning_Entry
+Più di 1 voce
+;
+Msg_DelWarning_Entries
+Più di %ld voci
+;
+Msg_Card_Title
+\33uCartolina per %s\n\
+
+;
+Msg_Card_Contact
+Contatto
+;
+Msg_Card_Phone
+Telefono
+;
+Msg_Card_Home
+Casa
+;
+Msg_Card_Work
+Lavoro
+;
+Msg_Card_Note
+Note
+;
+Msg_Card_GetMap
+Mappa
+;
+Msg_Card_Name
+Nome
+;
+Msg_Card_Alias
+Alias
+;
+Msg_Card_EMail
+EMail
+;
+Msg_Card_Phone_Home
+Telefono
+;
+Msg_Card_Phone_Fax
+Fax
+;
+Msg_Card_Phone_Mobile
+Cell
+;
+Msg_Card_Phone_Work
+Lavoro
+;
+Msg_Card_Phone_WorkFax
+Fax lavoro
+;
+Msg_Card_Phone_WorkMobile
+Cell lavoro
+;
+Msg_Card_Channel
+Canale
+;
+Msg_Card_Server
+Server
+;
+Msg_Card_Host
+Host
+;

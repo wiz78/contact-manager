@@ -1,0 +1,35 @@
+##base _CManagerBase
+##bias 30
+##public
+CM_StartManager(file,pubscreen)(a0,a1)
+##private
+obsolete1()()
+obsolete2()()
+obsolete3()()
+##public
+CM_GetParent(list,current)(a0,a1)
+CM_AllocEntry(type)(d0)
+CM_FreeEntry(entry)(a0)
+CM_FreeHandle(handle,close)(a0,d0)
+CM_GetEntry(handle,flags)(a0,d0)
+##private
+obsolete4()()
+obsolete5()()
+##public
+CM_AddEntry(entry)(a0)
+CM_FreeList(list)(a0)
+##private
+obsolete6()()
+obsolete7()()
+obsolete8()()
+##public
+CM_FreeData(data)(a0)
+CM_AllocCMData()()
+CM_GetString(id)(d0)
+CM_GetOption(id)(d0)
+CM_StartCManagerA(attrs)(a0)
+CM_AllocObject(type)(d0)
+CM_FreeObject(type)(a0)
+CM_LoadDataA(attrs)(a0)
+CM_SaveDataA(attrs)(a0)
+##end

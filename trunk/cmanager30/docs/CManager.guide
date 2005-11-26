@@ -1,0 +1,1121 @@
+@database CManager.guide
+@author Alfonso Ranieri
+@index "CMWIN"
+
+@Node "MAIN" "Contact Manager"
+
+@{b}ContactManager@{ub}
+@{u}                                                                 @{uu}
+
+
+
+    @{" Authors     " LINK "CMAuthors"   }    @{" Window      " LINK "CMWIN"       }    @{" Login       " LINK "CMLOGIN"     }
+    @{" WRID        " LINK "CMWRID"      }    @{" Menus       " LINK "CMMENUS"     }    @{" ARess       " LINK "CMAREXX"     }
+    @{" MUI         " LINK "CMMUI"       }    @{" Preferences " LINK "CMPREFS"     }    @{" Various     " LINK "CMVARIOUS"   }
+    @{" Third parts " LINK "CMTHIRDPARTS"}    @{" Search      " LINK "CMSEARCH"    }
+
+
+
+    The Contact Manager is a kind of diary or system address book
+    which allows you to store all your favourite user
+    information, web sites, FTP sites, IRC server/channels and
+    telnet hosts.
+
+    It is designed as a replacement to all the different
+    bookmarks, addressbooks and similar GUIs that are built into
+    many different @{u}Amiga@{uu} Internet and communications
+    programs.
+
+@EndNode
+
+@Node "CMAUTHORS" "Contact Manager - Authors"
+
+@{b}Authors@{ub}
+@{u}                                                                 @{uu}
+
+
+    Contact Manager is Copyright 1998-2004 by
+    Simone Telline simone@tellini.info and
+    Alfonso Ranieri alforan@tin.it.
+
+    You can find the last version of Contact Manager at:
+    http://alfie.altervista.org .
+
+@EndNode
+
+@Node "CMWRID" "Contact Manager - Warning, Requirements, Installation and Distribution"
+
+@{b}Warning, Requirements, Installation and Distribution@{ub}
+@{u}                                                                 @{uu}
+
+
+    @{u}Warning@{uu}
+
+    THIS SOFTWARE AND INFORMATION ARE PROVIDED "AS IS". ALL USE
+    IS AT YOUR OWN RISK, AND NO LIABILITY OR RESPONSIBILITY IS
+    ASSUMED. NO WARRANTIES ARE MADE.
+
+
+    @{u}Requirements@{uu}
+
+    Contact Manager needs AmigaOS version 3.5 or higher.
+
+
+    @{u}Installation@{uu}
+
+    Use the installation script.
+
+
+    @{u}Distribution@{uu}
+
+    Contact Manager 30.1 + is a Shareware product.
+    All rights are reserved.
+
+@EndNode
+
+@Node "CMMUI" "Contact Manager - MUI"
+
+@{b}MUI@{ub}
+@{u}                                                                 @{uu}
+
+
+    This application uses:
+
+    MUI - MagicUserInterface
+    Copyright 1992-2004 by Stefan Stuntz
+
+    MUI is a system to generate and maintain graphical user
+    interfaces. With the aid of a preferences program, the user
+    of an application has the ability to customize the outfit
+    according to his personal taste
+
+    MUI is distributed as shareware. To obtain a complete package
+    containing a lot of examples and more information about
+    registration please look for a file called muiXXusr.lha (XX
+    means the latest version number) on your local bulletin
+    boards or on public domain disks.
+
+    If you want to register directly, feel free to send
+
+    DM 30 or US$ 20
+
+    to
+
+    Stefan Stuntz Eduard-Spranger-Straße 7 80935 München GERMANY
+
+    Support and online registration is available at
+    http://www.sasg.com
+
+@EndNode
+
+@Node "CMTHIRDPARTS" "Contact Manager - THIRDPARTS"
+
+@{b}Third parts@{ub}
+@{u}                                                                 @{uu}
+
+
+    Contact Manager uses the following third parts:
+
+    - Buttons images taken from Martin "Mason" Merz's AppMI collection
+
+    - popupmenu.library by Henrik Isaksson, henrik@boing.nu
+
+    - Popplaceholder.mcc by Marcin Orlowski, carlos@amiga.com.pl
+    - NList classes by Gilles Masson, masson@iutsoph.unice.fr
+    - NListtree.mcc by Carsten Scholling, cs@aphaso.de
+    - Textinput classes by Oliver Wagner, owagner@vapor.com
+
+    - @{"MUI" LINK "CMMUI"}, of course!
+
+@EndNode
+
+@Node "CMWIN" "Contact Manager - Window"
+
+@{b}Window@{ub}
+@{u}                                                                 @{uu}
+
+
+    This is the main Contact Manager window.
+
+    At the top ther is the very cute TheBar buttons bar:
+
+    o @{u}Add@{uu}
+      Add a new entry. If the "Edit new entries" options
+      is set, the edit window is opened.
+
+    o @{u}Clone@{uu}
+      Clone the selected entries
+
+    o @{u}Edit@{uu}
+      Edit the selected entries
+
+    o @{u}Remove@{uu}
+      Remove the selected entries
+
+    o @{u}Search@{uu}
+      Open the search window
+
+    o @{u}Save@{uu}
+      Save data
+
+    o @{u}Prefs@{uu}
+      Open the preferences window
+
+    o @{u}Login@{uu}
+      Open the login window
+
+    The bar may be magically dragged around.
+
+    At the left, there is the @{" groups " link "CMGROUPS"} list.
+    You may add, delete, sort and rename groups in a very easy way.
+
+    At the right, there is the @{" entries " LINK "CMLIST"} list.
+
+    Quite all the objects have a context menu with very useful
+    items.
+
+    Note that:
+
+    o the position and the appearance of the buttons
+    o the weights of the two main listviews
+    o the columns contents and order
+    o the sorting criteria
+
+    are per-genesis-user saved anytime CManager is closed.
+
+@EndNode
+
+@Node "CMMENUS"  "Contact Manager - Menus"
+
+@{b}Menus@{ub}
+@{u}                                                                 @{uu}
+
+
+    @{fg shine}Project@{fg text}
+
+    - @{u}About@{uu}
+      Opens the "About" window.
+
+    - @{u}About MUI@{uu}
+      Opens the "About MUI" window.
+
+    - @{u}Hide@{uu}
+      Iconifies CM.
+
+    - @{u} Change user@{uu}
+      Change the current user.
+
+    - @{u}Save and Quit@{uu}
+      Saves current data and quits.
+
+    - @{u}Silent Quit@{uu}
+      Exits without asking the user, if data were modified.
+
+    - @{u}Quit@{uu}
+      Quits CM. If data were modified and SilentExit options is
+      not set, a requester is pop-up.
+
+
+    @{fg shine}Database@{fg text}
+
+    - @{u}Open@{uu}
+      Opens a CM database. The current user is logged off.
+
+    - @{u}Save@{uu}
+      Saves the current data.
+
+    - @{u}Save as@{uu}
+      Saves the current data with a different name.
+
+    -@{u} Last saved@{uu}
+      Reload data.
+
+    - @{u}Add@{uu}
+      Add a new entry.
+
+    - @{u}Clone@{uu}
+      Clone the active entries.
+
+    - @{u}Edit@{uu}
+      Edit the selected entries.
+
+    - @{u}Remove@{uu}
+      Remove the selected entries.
+
+    - @{u}Select all@{uu}
+      Select all the entries.
+
+    - @{u}Select none@{uu}
+      Unselect all the entries.
+
+    - @{u}Select toggle@{uu}
+      Toggle select all the entries.
+
+    - @{u}Search@{uu}
+      Opens the "Search" window.
+
+    - @{u}Scan hotlists@{uu}
+      Tests hotlists. If they have been modified since last
+      scanning, they are imported into the current database.
+
+    - @{u}Import@{uu}
+      Imports files into the current database.
+
+    - @{u}Export@{uu}
+      Exports the current database.
+
+      Note:
+
+      o How to export WWW sites to Internet Explorer:
+        . Select export to IE hotlist
+        . In IE import bookmarks
+
+      o How to import WWW sites from Internet Explorer:
+        . In IE export bookmarks
+        . Select import from IE hotlist
+
+      o How to export Users to Outlook Express:
+        . Select export Users as OE CSV
+        . In OE import Users as CSV, selecting all the fields
+          with their own mapping
+
+      o How to import Users from Outlook Express:
+        . In OE export Users as CSV
+        . Select import Users as OE CSV
+
+      o Simplemail import/export is possible only from/to
+        SimpleMail NewAddressBook fromt (SimpleMail ver 0.26
+        or higher) and if expat.library is available (so you
+        must download my expat.library from
+        http://alfier.altervista.org.
+
+
+    @{fg shine}Settings@{fg text}
+
+    - @{u}Edit@{uu}
+      Opens the Preferences window.
+
+    - @{u}Save@{uu}
+      Save current preferences
+
+    - @{u}Last saveds@{uu}
+      Load last saved preferences.
+
+    - @{u}Hide bar@{uu}
+      Toggle the buttons bar.
+
+    - @{u}Hide Card view@{uu}
+      Toggle the @{"Card view" LINK "CMCARD"}.
+
+    - @{u}Hide quick group@{uu}
+      Toggle the quick group.
+
+    - @{u}MUI@{uu}
+      Opens the MUI Settings window.
+
+@EndNode
+
+@Node "CMGROUPS" "Contact Manager - Groups"
+
+@{b}Groups@{ub}
+@{u}                                                                 @{uu}
+
+
+    This is the list of the groups.
+
+    When you select a group, the entries of that are shown in the
+    List at the right.
+
+    You may add a new group, selecting the parent group and
+    pressing the Add gadget.
+
+    You may remove a group, selecting the group to remove and
+    pressing the Rem gadget.
+
+    You may drag entries from the List at the right in any group
+    (of the same kind).
+
+    You may drag a group to any other (if logically permitted)
+    group (of the same kind).
+
+    Clicking the right-mouse-button opens a context menu:
+
+    - Open all
+      Opens all groups.
+
+    - Close all
+      Closes all groups.
+
+    - Sort
+      Alphabetically sorts all the subgroups of the current
+      group.
+
+    - Configure
+      Open the preference window
+
+    The two arrows gadgets move the active group up/down (in its
+    super group).
+
+@EndNode
+
+@Node "CMLIST" "Contact Manager - Entries"
+
+@{b}Entries@{ub}
+@{u}                                                                 @{uu}
+
+
+    This is the list of the entries in the current group. The
+    sorting criteria, the columns contents order and weight are
+    saved per user.
+
+    The list has two context menu:
+
+    if the mouse is over the list, clicking the right mouse
+    button opens the "Entry actions menu", where you may select
+    an action to be performed on the active entry;
+
+    if the mouse is over the title of the list, clicking the
+    right mouse button opens the "Columns menu", where you may
+    adjust the contents, the oder and the width of the columns of
+    the list.
+
+    The "Entry actions menu" depends on the type of the entry:
+
+    o User actions:
+
+      - @{u}Send to Browser@{uu}
+        Opens the WWW field of the user entry in the browser.
+
+      - @{u}Send to FTP@{uu}
+        Opens the FTP field of the user entry in the FTP client.
+
+      - @{u}Send EMail@{uu}
+        Sends an email.
+
+      - @{u}Quick EMail@{uu}
+        Sends an email using @{"MiniMailer.mcc" LINK "CMQUICKEMAIL"}.
+
+      - @{u}Call@{uu}
+        Makes a phone call.
+
+      - @{u}Send Fax@{uu}
+        Sends a fax.
+
+      - @{u}Copy@{uu}
+        Copy the user EMail (Home or Business) to the clipboard
+        unit 0.
+
+      - @{u}Configure@{uu}
+        Open the preference window
+
+      - @{u}Send to browser@{uu}
+        Opens the WWW field of the user entry in the browser.
+
+    o WWW actions:
+
+      - @{u}Send to Browser@{uu}
+        Opens the WWW field of the WWW entry in the browser.
+
+      - @{u}Send EMail@{uu}
+        Sends an email.
+
+      - @{u}Copy@{uu}
+        Copy the WWW field to the clipboard unit 0.
+
+      - @{u}Configure@{uu}
+        Open the preference window
+
+    o FTP actions:
+
+      - @{u}Send to FTP@{uu}
+        Opens the FTP field of the FTP entry in the FTP client.
+
+      - @{u}Send to Browser@{uu}
+        Opens the FTP field of the FTP entry in the browser.
+
+      - @{u}Send EMail@{uu}
+        Sends an email.
+
+      - @{u}Copy@{uu}
+        Copy the FTP field to the clipboard unit 0.
+
+      - @{u}Configure@{uu}
+        Open the preference window
+
+    o Chat actions:
+
+      - @{u}Join Chat@{uu}
+        Start the Chat client passing it the chat information of
+        the current entry.
+
+      - @{u}Send to Browser@{uu}
+        Opens the WWW field of the Chat entry in the browser.
+
+      - @{u}Send EMail@{uu}
+        Sends an email.
+
+      - @{u}Copy@{uu}
+        Copy the Channel field to the clipboard unit 0.
+
+      - @{u}Configure@{uu}
+        Open the preference window
+
+    o Telnet actions:
+
+      - @{u}Send to Telnet@{uu}
+        Start the Telnet client passing it the telnet information
+        of the current entry.
+
+      - @{u}Send EMail@{uu}
+        Sends an email.
+
+      - @{u}Copy@{uu}
+        Copy the Host field to the clipboard unit 0.
+
+      - @{u}Configure@{uu}
+        Open the preference window
+
+    The Locate gadget let you travel through the entries of the
+    current group.
+
+    The Entries gadget shows the number of the entries.
+
+    The Status Gadgets show the status of the current database:
+
+    - The first lamp is:
+      o Off when no change has be made
+      o Warning when some change has be made
+        (you should save it)
+
+    - The second lamp is:
+      o Off when no change has be made
+      o Warning when some change has be made by some other
+        application (you should reload it)
+
+@EndNode
+
+@Node "CMPREFS" "Contact Manager - Preferences"
+
+@{b}Preferences@{ub}
+@{u}                                                                 @{uu}
+
+
+    This is the Contact Manager preferences window.
+    It lets you define many per-user settings.
+
+    - @{fg shine}Options@{fg text}
+
+      o @{u}Ask before deleting@{uu}
+        Max number of entries that can be deleted without asking
+
+      o @{u}Double click@{uu}
+        What happens when you double click on WWW and FTP
+        entries
+
+      o @{u}Groups status@{uu}
+        How groups are displayed.
+
+      o @{u}Save on exit@{uu}
+        The database is saved on exit (if changed)
+
+      o @{u}Save on every changes@{uu}
+        The database is saved at any change
+
+      o @{u}Exit without confirmation@{uu}
+        Contact Manager doesn't bother the user at exit.
+
+      o @{u}Auto reload database on changes@{uu}
+        When the database changes (e.g. because of another
+        instance of CManager), it is reload without asking for
+        confirmation
+
+      o @{u}Don't check for database changes@{uu}
+        Contact Manager doesn't check at all for
+        database changes made by other applications.
+
+      o @{u}Silent scan hotlists@{uu}
+        At startup of CManager application the hotlists are
+        checked. If this is set, they are re-imported without
+        asking for confirmation if newer
+
+      o @{u}No sort@{uu}
+        Entries are not sorted and sortable. You may arrange
+        them via drag and drop.
+
+      o @{u}Use OpenURL@{uu}
+        Use openurl.library for "Send to Browser" and
+        "Send EMail" actions.
+
+      o @{u}Edit new entries@{uu}
+        Opens the edit window for new entries.
+
+      o @{u}Right mouse changes active@{uu}
+        If the right mouse buttons is pressed over an entry
+        in a list, that entry is made the active one.
+
+      o @{u}Bold entry list titles@{uu}
+        List titles are rendered bold
+
+      o @{u}No bars among columns@{uu}
+        Entries list doesn't have bars to separate columns
+
+      o @{u}Bold sections@{uu}
+        Main group names are rendered bold
+
+      o @{u}Display empty nodes as leaves@{uu}
+        If a group has no subgroup, it is displayed as a leave
+
+      o @{u}Use section images@{uu}
+        Use section images.
+
+      o @{u}Use group images@{uu}
+        Use group images.
+
+    - @{fg shine}Locale@{fg text}
+
+      o @{u}Country@{uu}
+        The country you leave in
+
+      o @{u}Country code@{uu}
+        The phone country code of the country you leave in
+
+      o @{u}Get from locale@{uu}
+        Try to obtain Country code from the system
+
+      o @{u}Charset@{uu}
+        Contact Manager data are saved in UTF8 format.
+        Here you may define the charset to use.
+        Default is ISO-8859-1 + Euro.
+
+    - @{fg shine}Buttons bar@{fg text}
+
+      o @{u}Position@{uu}
+        The position of the bar in CManager window
+
+      o @{u}Buttons position@{uu}
+        The position of the buttons in the bar
+
+      o @{u}Appearance@{uu}
+        The appearance of the buttons
+
+      o @{u}Label position@{uu}
+        The position of the text position in "Icons and text" buttons
+
+      o @{u}Borderless@{uu}
+        Buttons are borderless
+
+      o @{u}Highlight@{uu}
+        Buttons are in black and white, but when the mouse is
+        over a button it is rendered colored
+
+      o @{u}Raised@{uu}
+        Buttons are frameless, but when the mouse is over a
+        button a frame is drawn around it
+
+      o @{u}Scaled@{uu}
+        Buttons are scaled.
+
+      o @{u}Short cuts@{uu}
+        Buttons short cuts are active
+
+      o @{u}Bar spacer@{uu}
+        A bar is used as buttons spacer
+
+      o @{u}Buttons bar frame@{uu}
+        The buttons bar has a frame
+
+      o @{u}Draggable buttons bar@{uu}
+        The buttons bar is draggable
+
+    - @{fg shine}Programs@{fg text}
+
+      Any action, but "Call", performed by the user on an entry
+      is associated to an ARexx script. Here you may define a
+      script to execute for each action.
+
+      Some script is supplied with Contact Manager and it is
+      ready to use, with a little bit of configuration.
+
+      E.g., if you want to use AWeb as default browser for "Send
+      to Browser" action, just select AWeb in the WWW cycle
+      gadget of the "Send to Browser" action ("SendAWeb.rexx"
+      will set in the Script gadget) and define the complete path
+      to AWeb in the Path gadget.
+
+      Of course, you may defined your own script; it will be
+      called with 2 arguments:
+
+      "arg" "client"
+
+      arg is the main argument for the script, e.g. the url of a
+      WWW or FTP site, a number to call and so on.
+
+      client is the application client as specified in the Path
+      gadget.
+
+      If you need more information about the entry, fill free to
+      use the GETENTRY Contact Manager ARexx command for a full
+      access (see SendAmFTP.rexx script).
+
+      To parse the argument, use such a line
+      parse arg '"'arg'" "'client'"'
+
+      Note that if "Use OpenURL" is selected and openurl.library
+      is present, "Send to Browser" and "Send EMail" action use
+      openurl.library; I strongly suggest to install OpenURL in
+      your system.
+
+      In the "Send to FTP" action may also be specified a
+      complete path to a locale drawer to be used for any FTP
+      site. E.g. a FTP client may used it to open that drawer in
+      a lister.
+
+      Saved is a special action: the specified application is run
+      anytime data are saved.
+
+    - @{fg shine}Dialer@{fg text}
+
+      Here you may decide what happens when the "Dial" item is
+      selected: use the internal dialer or call an external
+      dialer program.
+
+      o @{u}Internal@{uu}
+
+        . @{u}Device@{uu}
+          The name of the device to use
+
+        . @{u}Unit@{uu}
+          The unit of the device
+
+        . @{u}Shared@{uu}
+          Use the device in shared mode
+
+        . @{u}Modem type@{uu}
+          The type of your modem; it is useless atm
+
+        . @{u}Modem init@{uu}
+          The init string of your modem
+
+        . @{u}Dial command@{uu}
+          The dial command string of your modem
+
+        . @{u}Redial delay@{uu}
+          The number of seconds to wait between 2 dial attempt
+
+        . @{u}Redial attempt@{uu}
+          The number of redial attempts
+
+      o @{u}External@{uu}
+
+        . @{u}Program@{uu}
+          The name of the external dialer to call
+
+    - @{fg shine}Hotlists@{fg text}
+
+      CManager may automatically checks the hotlists you specify
+      here. Anytime CManager application is run, it checks if
+      they are newer and, if so, they are re imported.
+
+@EndNode
+
+@Node "CMSEARCH" "Contact Manager - Search"
+
+@{b}Search@{ub}
+@{u}                                                                 @{uu}
+
+
+    Here you may search for entries, selecting what to search and
+    where to search. The elements of the window are:
+
+    o @{fg shine}Pattern@{fg text}
+      The string to search for
+
+    o @{fg shine}Options@{fg text}
+
+      - @{u}Case@{uu}
+        Searching is case sensitive
+
+      - @{u}Wildcards@{uu}
+        Pattern is an AmigaDOS pattern rather that a simple
+        string.
+
+      - @{u}Search in comment@{uu}
+        Also check for Pattern in the Comment field
+
+    o @{fg shine}Search in@{fg text}
+
+      - @{u}User@{uu}
+        Search in User entries
+
+      - @{u}WWW sites@{uu}
+        Searching in WWW sites
+
+      - @{u}FTP sites@{uu}
+        Search in FTP sites
+
+      - @{u}Chat@{uu}
+        Search in Chat entries
+
+      - @{u}Telnet@{uu}
+        Search in Telnet entries
+
+    o @{fg shine}Search@{fg text}
+      Continue (or start) searching
+
+    o @{fg shine}First@{fg text}
+      Got to first occurrence
+
+    o @{fg shine}Previous@{fg text}
+      Go to previous occurrence
+
+    o @{fg shine}Cancel@{fg text}
+      Close window
+
+@EndNode
+
+@Node "CMLOGIN" "Contact Manager - Login"
+
+@{b}Login@{ub}
+@{u}                                                                 @{uu}
+
+
+    Here you may change the logged user. That is only valid if
+    you have Genesis installed in your system (better:
+    genesis.library available) and the environment var
+    CManager/AvoidGenesis is not set to 1.
+
+@EndNode
+
+@Node "CMAREXX" "Contact Manager - ARexx"
+
+@{b}ARexx@{ub}
+@{u}                                                                 @{uu}
+
+
+    Contact Manager opens a port names CONTACTMAN.X where X is
+    1,2,...
+
+    You may send these commands to that port:
+
+    - GETATTR ATTR/A
+      Reads the value of a Contact Manager attribute.
+
+      Actually ATTR is one of:
+
+      - USEFTPLOCAL
+        The value of "Prefs/Programs/Send to FTP/Local/Use"
+
+      - FTPLOCAL
+        The value of "Prefs/Programs/Send to FTP/Local"
+
+
+    - GETENTRY STEM/A
+      Write in STEM some fields regarding the active entry:
+
+      - User
+        - TYPE
+          always "USER"
+        - NAME
+        - LASTNAME
+        - ADDRESS
+        - CITY
+        - COUNTRY
+        - ZIP
+        - ALIAS
+        - COMMENT
+        - EMAIL
+        - WWW
+        - FTP
+        - PHONE
+        - FAX
+        - MOBILE
+        - ICQ
+        - PGP
+        - IMAGE
+        - SEX
+          . 0 - Not defined
+          . 1 - Male
+          . 2 - Female
+        - USEBIRTHDAY
+          . if 0 birthday not defined
+          . if 1 birthday defined
+        - BIRTHDAY
+        - USEANNIVERSARY
+          . if 0 anniversary not defined
+          . if 1 anniversary defined
+        - ANNIVERSARY
+        - BUSINESS.COMPANY
+        - BUSINESS.JOBTITLE
+        - BUSINESS.OFFICE
+        - BUSINESS.ADDRESS
+        - BUSINESS.CITY
+        - BUSINESS.COUNTRY
+        - BUSINESS.ZIP
+        - BUSINESS.DEPARTMENT
+        - BUSINESS.PHONE
+        - BUSINESS.FAX
+        - BUSINESS.MOBILE
+        - BUSINESS.EMAIL
+
+      - WWW:
+        - TYPE
+          always "WWW"
+        - NAME
+        - WWW
+        - COMMENT
+        - WEBMASTER
+        - EMAIL
+        - LASTMODIFIED.DAYS
+        - LASTMODIFIED.MINUTE
+        - LASTMODIFIED.TICK
+        - LASTVISITED.DAYS
+        - LASTVISITED.MINUTE
+        - LASTVISITED.TICK
+        - ALIAS
+
+      - FTP:
+        - TYPE
+          always "FTP"
+        - NAME
+        - FTP
+        - COMMENT
+        - USERNAME
+        - PASSWORD
+        - PORT
+        - RETRIES
+        - LOCAL
+        - LASTMODIFIED.DAYS
+        - LASTMODIFIED.MINUTE
+        - LASTMODIFIED.TICK
+        - LASTVISITED.DAYS
+        - LASTVISITED.MINUTE
+        - LASTVISITED.TICK
+        - ALIAS
+        - WINDOWSTYLE
+        - EMAIL
+        - ADT
+        - USEPROXY
+        - USELOCAL
+        - ADVANCED
+        - QUIET
+        - COMPRESS
+        - ANONYMOUS
+        - SHOWOUTPUT
+        - SHOWHIDDENFILES
+        - SENDNOOPS
+
+      - CHAT:
+        - TYPE
+          always "CHAT"
+        - CHANNEL
+        - SERVER
+        - MAINTAINER
+        - NICK
+        - WWW
+        - COMMENT
+        - PASSWORD
+        - EMAIL
+
+      - TELNET:
+        - TYPE
+          always "TELNET"
+        - HOST
+        - PORT
+        - LOGIN
+        - PASSWORD
+        - COMMENT
+        - SSH
+        - EMAIL
+
+
+    A simple ARexx function to parse the Gregorian date
+    returned in Birthday and Anniversary fields is:
+
+    gregToDate: procedure
+    parse arg greg
+
+        a = greg+32044
+        b = (4*a+3)%146097
+        c = a-(b*146097)%4
+
+        d = (4*c+3)%1461
+        e = c-(1461*d)%4
+        m = (5*e+2)%153
+
+        day   = e-(153*m+2)%5+1
+        month = m+3-12*(m%10)
+        year  = b*100+d-4800+m%10
+
+        return day"/"month"/"year
+
+
+    As you can see, Contact Manager doesn't offer many ARexx
+    commands. That is because of, if you need more control over
+    CManager data, you should use rxcmanager.library.
+
+@EndNode
+
+@Node "CMVARIOUS" "Contact Manager - Various"
+
+@{b}Various@{ub}
+@{u}                                                                 @{uu}
+
+
+    For its context menus, Contact Manager tries to use
+    popupmenu.library. Its menus are more beautiful and faster
+    than MUI ones.
+
+    Get a full installation archive of popupmenu.library
+    and install/setup it.
+
+    Contact Manager reads the following environment vars at
+    startup:
+
+    - Vapor/CManager_Path
+      It is set by the installer script to the full path to
+      CManager exec
+
+
+    - CManager/AvoidGenesis
+      If 1, genesis.library is not used
+
+    - CManager/UseBWin
+      If 1, all windows are BWin.mcc ones
+
+    - CManager/AvoidPopupMenu
+      If 1, popupmenu.library is not used
+
+    - CManager/GroupsInputFrame
+      If 1, groups list uses an input list frame
+      rather than a read list frame.
+
+    Changes to the above needs CManager.library and
+    CManager.mcc to be both flushed from memory.
+
+@EndNode
+
+
+@Node "CMUSERS" "Contact Manager - Edit user window"
+
+@{b}Edit user window@{ub}
+@{u}                                                                 @{uu}
+
+
+    In this window you may edit an user.
+
+    Note that:
+
+    - the first email is the default one, used when "Send EMail"
+      action is invoked
+
+@EndNode
+
+@Node "CMWWW" "Contact Manager - Edit WWW site window"
+
+@{b}Edit WWW site window@{ub}
+@{u}                                                                 @{uu}
+
+
+    In this window you may edit a WWW site.
+
+@EndNode
+
+@Node "CMFTP" "Contact Manager - Edit FTP site window"
+
+@{b}Wdit FTP site window@{ub}
+@{u}                                                                 @{uu}
+
+
+    In this window you may edit a FTP site.
+
+@EndNode
+
+@Node "CMCHAT" "Contact Manager - Edit chat entry window"
+
+@{b}Edit chat entry window@{ub}
+@{u}                                                                 @{uu}
+
+
+    In this window you may edit a chat entry.
+
+@EndNode
+
+@Node "CMTELNET" "Contact Manager - Edit telnet window"
+
+@{b}Edit telnet host window@{ub}
+@{u}                                                                 @{uu}
+
+
+    In this window you may edit a telnet host.
+
+@EndNode
+
+@Node "CMQUICKEMAIL" "Contact Manager - Quick EMail window"
+
+@{b}Quick EMail window@{ub}
+@{u}                                                                 @{uu}
+
+
+    Here you may send an email to an user without opening
+    your email client. Note that Name, EMail and Server
+    are per-user saved.
+
+@EndNode
+
+@Node "CMCARD" "Contact Manager - Card view"
+
+@{b}Card view@{ub}
+@{u}                                                                 @{uu}
+
+
+    This is a card view for the selected entry.
+
+    If you have OpenURL installed you may click on urls (if any)
+    to reach them via your favorite browser.
+
+    If the entry is an user you can try to get the map of its
+    home or work address pressing the GetMap gadget; if an image
+    file is supplied you get a miniature of it at the right. The
+    miniature may be controlled via the following environment
+    vars:
+
+    o CManager/MiniatureShow
+      0 Show the miniature
+      1 Don't show the miniature
+      Default: 1
+
+    o CManager/MiniatureMaxSize
+      32<=Val<=256
+      Max width, height of the miniature
+      Default: 128
+
+    o CManager/MiniatureFrame
+      0<=Val<=12
+      MUI Frame number for the miniature, one of:
+
+        .  0 None
+        .  1 Button
+        .  2 ImageButton
+        .  3 Text
+        .  4 String
+        .  5 ReadList
+        .  6 InputList
+        .  7 Prop
+        .  8 Gauge
+        .  9 Group
+        . 10 PopUp
+        . 11 Virtual
+        . 12 Slider
+
+      Default: 4 (String).
+
+    Card view may be hidden/shown via the "Hide card view" menu
+    item. It's state and entries list relative weight is
+    per-super saved.
+
+    The title of the card is rendered via the MUI big font.
+
+    Sorry, but colors and background are fixed and will remain so.
+
+@EndNode
+
